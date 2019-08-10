@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>人民好新闻定评会投票</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=1200, user-scalable=yes, shrink-to-fit=no" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="robots" content="all" />
+    <meta name="keywords" content="{TAG_59446_TAG}" />
+    <meta name="description" content="{TAG_59447_TAG}" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <meta name="catalogs" content="w_0" />
+    <meta name="partner" content="">
+    <meta name="pageversion" content="3">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <link rel="stylesheet" href="./static/css/common.css">
+    <style>
+      body {
+        background-image: url('./static/resource/login-bg.jpg');
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 1050px;
+        min-height: 900px;
+      }
+      .logo {
+        position: absolute;
+        right: 2%;
+        top: 2%;
+      }
+      .login-box {
+        width: 629px;
+        height: 414px;
+        background-image: url('./static/resource/login-box.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .login-box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 25%;
+        bottom: 0;
+        margin: auto;
+      }
+      .input-bar {
+        width: 65%;
+        position: absolute;
+        height: 80px;
+        line-height: 80px;
+        background-color: transparent;
+        border: none;
+        margin: 0 auto;
+        left: 5%;
+        right: 0;
+        display: block;
+        outline: none;
+        font-size: 23px;
+        color: #333;
+      }
+      .password {
+        top: 122px;
+      }
+      .username {
+        top: 5px;
+      }
+      .ripple {
+        width: 87%;
+        position: absolute;
+        height: 89px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 67px;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 45px;
+        display: block;
+        opacity: 0;
+        background-color: transparent;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 右上角logo -->
+    <img class="logo" src="./static/resource/logo.png"/>
+    <form class="login-box">
+      <input id="username" class="username input-bar"  type="text" placeholder="请输入oa用户名"/>
+      <input id="password" class="password input-bar" type="password" placeholder="请输入密码"/>
+      <input class="ripple" type="submit" value="" />
+    </form>
+    <script src="./static/js/jquery-1.12.4.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script>
+      function changeBGSize () {
+        var ratio = window.innerWidth / window.innerHeight
+        // console.log(ratio)
+        if (ratio > 1.6) {
+          $('body').css('background-size', '100% auto')
+        } else {
+          $('body').css('background-size', 'auto 100%')
+        }
+      }
+      changeBGSize ()
+      window.onresize = changeBGSize
+
+      // 水波纹按钮
+      function createRipple() {
+        //Create Ripple
+        const ripple = document.createElement("div");
+        ripple.className = "ripple-effect";
+
+
+        this.appendChild(ripple);
+
+        ripple.style.top = (event.layerY - (ripple.offsetWidth / 2)) + "px";
+        ripple.style.left = (event.layerX - (ripple.offsetHeight / 2)) + "px";
+
+        ripple.addEventListener("animationend", destroyRipple, false);
+        ripple.addEventListener("webkitAnimationEnd", destroyRipple, false);
+        ripple.addEventListener("oAnimationEnd", destroyRipple, false);
+        ripple.addEventListener("MSAnimationEnd", destroyRipple, false);
+      }
+
+      function destroyRipple() {
+        this.parentElement.removeChild(this)
+      }
+      $('.ripple').on('mousedown', createRipple)
+      $('.ripple').on('touchstart', createRipple)
+    </script>
+  </body>
+</html>
