@@ -133,7 +133,7 @@
       .card .title {
         color: #a24f4f;
         line-height: 30px;
-        margin: 0 20px;
+        margin: 0 28px;
       }
       .card .line {
         margin-bottom: 5px;
@@ -172,7 +172,6 @@
         color: #a24f4f;
       }
       .edit .container {
-        padding: 0px 20px;
         margin: 1px 15px;
       }
       .text {
@@ -218,7 +217,7 @@
         height: 242px;
       }
       .input-bar textarea.mini {
-        height: 76px;
+        height: 99px;
       }
       .input-bar select {
         color: #896469;
@@ -289,24 +288,37 @@
         bottom: 0;
         margin: auto;
         display: none;
+        height: auto;
       }
       .bottom-bar .submit {
         background-color: #b7241c;
         color: white;
-        width: 120px;
-        line-height: 40px;
+        width: 180px;
+        line-height: 55px;
         border-radius: 5px;
         cursor: pointer;
+        margin-right: 40px;
+        font-size: 20px;
+        box-shadow: 1px 1px 5px #888888;
       }
       .bottom-bar .backto {
         background-color: white;
-        width: 120px;
-        line-height: 40px;
+        width: 180px;
+        line-height: 51px;
         border-radius: 5px;
         cursor: pointer;
         color: #b7241c;
-        border: 1px solid #b7241c;
+        font-size: 20px;
+        border: 2px solid #b7241c;
         box-sizing: border-box;
+      }
+      .radio-box, .red {
+        line-height: 40px;
+        height: 40px;
+        display: inline-block;
+      }
+      .radio-box label {
+        cursor: pointer;
       }
     </style>
   </head>
@@ -387,8 +399,15 @@
           <div class="min clear">
             <div class="card edit">
               <div class="container">
+                <span class="separate">·</span>
                 <h2 class="red">是否推荐总编辑奖:</h2>
-                <h3>是</h3>
+                <span class="radio-box">
+                  <input type="radio" name="radiobuttons" id="radio1" class="a11y-radio" />
+                  <label for="radio1" class="a11y-radio-label">是</label>
+                  
+                  <input type="radio" name="radiobuttons" id="radio2" checked="checked" class="a11y-radio" />
+                  <label for="radio2" class="a11y-radio-label">否</label>
+                </span>
               </div>
             </div>
             <div class="card">
@@ -451,7 +470,7 @@
                   <!-- 上传新图片 -->
                   <div class="new-image">
                     <input type="file" class="file-upload" id="fileinp" >
-                    <img src="http://www.people.com.cn/NMediaFile/2019/0812/MAIN201908121511016697175709078.jpg" height="200" alt="Image preview..."> 
+                    <img alt="Image preview..."> 
                   </div>
                   <div class="new-image">
                     <input type="file" class="file-upload" id="fileinp2">
@@ -554,6 +573,9 @@
         var file1 = $('#fileinp')[0].files[0]
         var file2 = $('#fileinp2')[0].files[0]
         console.log(file1, file2)
+        // 判断是否总编辑奖
+        var editor = $('#radio1')[0].checked
+        console.log(editor)
       }
     </script>
   </body>
