@@ -93,3 +93,85 @@ a {
     opacity: 0;
   }
 }
+.content {
+  height: 92%;
+  width: 100%;
+}
+textarea{ resize:none;}
+/* 滚动条 */
+::-webkit-scrollbar {  
+  width: 8px;    
+  background-color: #fff;  
+}  
+
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}  
+
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb {  
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #9d9d9d;
+}
+
+input::-webkit-input-placeholder {
+  color: #c5c5c5;
+}
+input::-moz-placeholder {
+  color: #c5c5c5;
+}
+input:-moz-placeholder {
+  color: #c5c5c5;
+}
+input:-ms-input-placeholder {
+  color: #c5c5c5;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #c5c5c5;
+}
+textarea::-moz-placeholder {
+  color: #c5c5c5;
+}
+textarea:-moz-placeholder {
+  color: #c5c5c5;
+}
+textarea:-ms-input-placeholder {
+  color: #c5c5c5;
+}
+
+.title-info-box {
+  color: white;
+  margin: 20px 20px;
+  font-size: 14px;
+}
+.group {
+  margin: 0 20px;
+}
+.group-title {
+  color: white;
+  background-color: #bb0316;
+  padding: 0 10px;
+  line-height: 30px;
+  height: 30px;
+  margin: 10px 0;
+  display: inline-block;
+  border-radius: 5px;
+}
+.box-content {
+  margin-top: 10px;
+  min-height: 100px;
+}
+.group-name {
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  border-bottom: 1px solid white;
+}
+
+.box-title-bar input:hover, .box-title-bar .back:hover {
+  background-color: #868282;
+}

@@ -39,7 +39,7 @@
         min-height: 900px;
       }
       .title-bar {
-        height: 80px;
+        height: 8%;
         background-color: #ba0319;
       }
       .logo-box {
@@ -50,9 +50,10 @@
         height: 100%;
         position: relative;
         float: left;
+        background-position: center;
       }
       .logo, .content  .right {
-        height: 70%;
+        height: 50%;
         position: absolute;
         left: 0;
         right: 0;
@@ -78,8 +79,7 @@
       .content .left {
         background-image: url(./static/resource/decorate-bg.jpg);
         min-height: 880px;
-        background-size: 100% auto;
-        background-position-y: -30px;
+        background-size: auto 100%;
         background-repeat: no-repeat;
       }
       .box {
@@ -114,34 +114,6 @@
       }
       .box-title-bar input:hover {
         background-color: #606060;
-      }
-      .title-info-box {
-        color: white;
-        margin: 20px 20px;
-        font-size: 14px;
-      }
-      .group {
-        margin: 0 20px;
-      }
-      .group-title {
-        color: white;
-        background-color: #bb0316;
-        padding: 0 10px;
-        line-height: 30px;
-        height: 30px;
-        margin: 10px 0;
-        display: inline-block;
-        border-radius: 5px;
-      }
-      .box-content {
-        margin-top: 10px;
-        min-height: 100px;
-      }
-      .group-name {
-        color: white;
-        font-size: 18px;
-        line-height: 30px;
-        border-bottom: 1px solid white;
       }
       .box-content-left {
         float: left;
@@ -252,7 +224,7 @@
           <div class="box-content clear">
             <div class="box-content-left">
               <!-- 开始申报按钮 -->
-              <a href="#" class="start">开始申报</a>
+              <a href="./新增修改.html" class="start">开始申报</a>
             </div>
             <div class="box-content-right">
               <!-- 标题栏 -->
@@ -261,15 +233,15 @@
                 <li>
                   <a href="./详情页.html">康美药业财务造假系列报道</a>
                   <div class="control">
-                    <a href="#">修改</a>
-                    <a href="#">删除</a>
+                    <a href="./新增修改.html">修改</a>
+                    <a class="delete" onclick="deleteItem(1, '康美药业财务造假系列报道')">删除</a>
                   </div>
                 </li>
                 <li>
                   <a href="./详情页.html">康美药业财务造假系列报道</a>
                   <div class="control">
-                    <a href="#">修改</a>
-                    <a href="#">删除</a>
+                    <a href="./新增修改.html">修改</a>
+                    <a class="delete" onclick="deleteItem(2, '康美药业财务造假系列报道')">删除</a>
                   </div>
                 </li>
               </ul>
@@ -280,6 +252,7 @@
     </div>
     <script src="./static/js/jquery-1.12.4.min.js" type="text/javascript" charset="UTF-8"></script>
     <script>
+      // 计算合适的屏幕大小
       function changeBGSize () {
         var ratio = window.innerWidth / window.innerHeight
         // console.log(ratio)
@@ -292,29 +265,17 @@
       changeBGSize ()
       window.onresize = changeBGSize
 
-      // 水波纹按钮
-      function createRipple() {
-        //Create Ripple
-        const ripple = document.createElement("div");
-        ripple.className = "ripple-effect";
+      // 删除提示
+      function deleteItem (id, name) {
+        console.log(this)
+        var mymessage = confirm('确定要删除 "' + name + '" 吗！')
+        if (mymessage) {
+          // 刷新页面
+          location.reload()
+        } else {
 
-
-        this.appendChild(ripple);
-
-        ripple.style.top = (event.layerY - (ripple.offsetWidth / 2)) + "px";
-        ripple.style.left = (event.layerX - (ripple.offsetHeight / 2)) + "px";
-
-        ripple.addEventListener("animationend", destroyRipple, false);
-        ripple.addEventListener("webkitAnimationEnd", destroyRipple, false);
-        ripple.addEventListener("oAnimationEnd", destroyRipple, false);
-        ripple.addEventListener("MSAnimationEnd", destroyRipple, false);
+        }
       }
-
-      function destroyRipple() {
-        this.parentElement.removeChild(this)
-      }
-      $('.ripple').on('mousedown', createRipple)
-      $('.ripple').on('touchstart', createRipple)
     </script>
   </body>
 </html>

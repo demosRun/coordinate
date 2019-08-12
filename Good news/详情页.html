@@ -39,7 +39,7 @@
         min-height: 900px;
       }
       .title-bar {
-        height: 80px;
+        height: 8%;
         background-color: #ba0319;
       }
       .logo-box {
@@ -50,9 +50,10 @@
         height: 100%;
         position: relative;
         float: left;
+        background-position: center;
       }
       .logo, .content  .right {
-        height: 70%;
+        height: 50%;
         position: absolute;
         left: 0;
         right: 0;
@@ -63,8 +64,7 @@
       .content .left {
         background-image: url(./static/resource/decorate-bg.jpg);
         min-height: 880px;
-        background-size: 100% auto;
-        background-position-y: -30px;
+        background-size: auto 100%;
         background-repeat: no-repeat;
       }
       .box {
@@ -88,7 +88,7 @@
         font-weight: bold;
         border-radius: 10px 10px 0 0;
       }
-      .box-title-bar input {
+      .box-title-bar .back {
         border: none;
         font-size: 14px;
         color: white;
@@ -100,12 +100,14 @@
         right: 0;
         top: 5px;
         cursor: pointer;
+        line-height: 30px;
       }
       .right-bar, .content .right {
         width: 85%;
         height: 100%;
         float: left;
         position: relative;
+        overflow: auto;
       }
       .right-bar .title {
         height: 60%;
@@ -200,11 +202,17 @@
         float: left;
         margin: 5px;
         display: block;
+        width: 48%;
+        height: 96%;
+        position: relative;
       }
       .img-box a img {
-        width: 260px;
-        height: 146px;
+        width: 100%;
         display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
       }
     </style>
   </head>
@@ -226,7 +234,7 @@
         <div class="box clear">
           <div class="box-title-bar">
             <span>申报详情</span>
-            <input type="button" value="返回">
+            <a class="back" href="./申报页.html">返回</a>
           </div>
           <!-- 卡片 -->
           <div class="card">
@@ -293,24 +301,6 @@
                 <div class="line"></div>
                 <!-- 图片展示框 -->
                 <div class="img-box">
-                  <a target="_blank" href="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg">
-                    <img src="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg"/>
-                  </a>
-                  <a target="_blank" href="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg">
-                    <img src="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg"/>
-                  </a>
-                  <a target="_blank" href="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg">
-                    <img src="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg"/>
-                  </a>
-                  <a target="_blank" href="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg">
-                    <img src="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg"/>
-                  </a>
-                  <a target="_blank" href="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg">
-                    <img src="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg"/>
-                  </a>
-                  <a target="_blank" href="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg">
-                    <img src="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg"/>
-                  </a>
                   <a target="_blank" href="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg">
                     <img src="http://www.people.com.cn/NMediaFile/2019/0810/MAIN201908101458318874849647430.jpg"/>
                   </a>
