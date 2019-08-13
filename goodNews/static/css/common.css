@@ -286,3 +286,24 @@ input[type="radio"]:disabled + .a11y-radio-label::before {
 .menu-box .active {
   background-color: #b7241c;
 }
+
+.content .box .bottom-bar {
+  width: 100%;
+  height: 150px;
+  float: left;
+}
+
+.right .box {
+  padding-bottom: 80px;
+}
+
+.img-box .new-image {
+  width: 43%;
+}
+
+a {
+  color: #606060;
+}
+.menu-box a {
+  color: white;
+}
