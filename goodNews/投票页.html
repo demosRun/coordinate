@@ -165,10 +165,14 @@
         -ms-user-select: none;
         user-select: none;
         cursor: pointer;
+        border: none;
+        overflow: hidden;
       }
       label.checkbox.red input[type="checkbox"] {
         position: absolute;
         opacity: 0;
+        left: -100%;
+        top: -100%;
       }
       label.checkbox.red input[type="checkbox"]:focus ~ span {
         border: 2px solid #aab0b9;
@@ -178,7 +182,7 @@
       }
       label.checkbox.red input[type="checkbox"]:checked ~ span {
         color: #FFFFFF;
-        background: #c76870 url('./static/resource/check.svg') 50% 40% no-repeat;
+        background: #c76870 url('./static/resource/check.png') 50% 40% no-repeat;
         border: 2px solid #c76870;
         position: absolute;
         left: 0;
@@ -192,8 +196,8 @@
         position: absolute;
         left: 0;
         top: -2px;
-        width: 2rem;
-        height: 2rem;
+        width: 20px;
+        height: 20px;
         border: 2px solid #c76870;
         pointer-events: none;
         -webkit-user-select: none;
@@ -465,7 +469,11 @@
       window.onresize = changeBGSize
 
       // 计算内容区合适的高度
+<<<<<<< HEAD
       $('.box-content')[0].style.height = window.innerHeight - 180 + 'px'
+=======
+      $('.box-content')[0].style.height = document.body.clientHeight - 180 + 'px'
+>>>>>>> d632ecfb69b29706890672ba6fda03427583a5d3
 
       var checkList = []
       // 投票点击事件
