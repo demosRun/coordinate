@@ -266,6 +266,7 @@
         display: block;
         width: 190px;
         height: 245px;
+        width: 46%;
         position: relative;
         background-image: url(./static/resource/add.png);
         background-repeat: no-repeat;
@@ -273,6 +274,7 @@
         background-color: #f4f4f4;
         border-radius: 5px;
         border: 1px solid #dedede;
+        overflow: hidden;
       }
       .new-image input {
         opacity: 0;
@@ -471,11 +473,11 @@
                   <!-- 上传新图片 -->
                   <div class="new-image">
                     <input type="file" class="file-upload" id="fileinp" >
-                    <img alt="Image preview..."> 
+                    <img id="previewImg1" alt="Image preview..."> 
                   </div>
                   <div class="new-image">
                     <input type="file" class="file-upload" id="fileinp2">
-                    <img height="200" alt="Image preview..."> 
+                    <img id="previewImg2" alt="Image preview..."> 
                   </div>
                 </div>
               </div>
@@ -573,7 +575,10 @@
         // 判断图片是否上传了两张
         var file1 = $('#fileinp')[0].files[0]
         var file2 = $('#fileinp2')[0].files[0]
-        console.log(file1, file2)
+        // 如果没有上传两张图判断是否本来就有图片
+        var previewImg1IsSet = $('#previewImg1')[0].src != ""
+        var previewImg2IsSet = $('#previewImg2')[0].src != ""
+        console.log(file1, file2, previewImg1IsSet, previewImg2IsSet)
         // 判断是否总编辑奖
         var editor = $('#radio1')[0].checked
         console.log(editor)
