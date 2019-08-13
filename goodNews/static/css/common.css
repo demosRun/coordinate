@@ -294,7 +294,7 @@ input[type="radio"]:disabled + .a11y-radio-label::before {
 }
 
 .right .box {
-  padding-bottom: 80px;
+  padding-bottom: 14%;
 }
 
 .img-box .new-image {
@@ -306,4 +306,9 @@ a {
 }
 .menu-box a {
   color: white;
+}
+
+.min {
+  min-width: unset;
+  min-height: unset;
 }

@@ -3,7 +3,7 @@
   <head>
     <title>人民好新闻定评会投票</title>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-    <meta name="viewport" content="width=1200, user-scalable=yes, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no, email=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />
@@ -32,15 +32,15 @@
     <style>
       body {
         background-image: url('./static/resource/login-bg.jpg');
-        background-size: auto 100%;
+        background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: center;
-        min-width: 1050px;
-        min-height: 900px;
+        min-width: 1000px;
+        min-height: 750px;
       }
       .logo {
         position: absolute;
-        right: 2%;
+        right: 4%;
         top: 2%;
       }
       .login-box {
@@ -118,30 +118,6 @@
       }
       changeBGSize ()
       window.onresize = changeBGSize
-
-      // 水波纹按钮
-      function createRipple() {
-        //Create Ripple
-        const ripple = document.createElement("div");
-        ripple.className = "ripple-effect";
-
-
-        this.appendChild(ripple);
-
-        ripple.style.top = (event.layerY - (ripple.offsetWidth / 2)) + "px";
-        ripple.style.left = (event.layerX - (ripple.offsetHeight / 2)) + "px";
-
-        ripple.addEventListener("animationend", destroyRipple, false);
-        ripple.addEventListener("webkitAnimationEnd", destroyRipple, false);
-        ripple.addEventListener("oAnimationEnd", destroyRipple, false);
-        ripple.addEventListener("MSAnimationEnd", destroyRipple, false);
-      }
-
-      function destroyRipple() {
-        this.parentElement.removeChild(this)
-      }
-      $('.ripple').on('mousedown', createRipple)
-      $('.ripple').on('touchstart', createRipple)
     </script>
   </body>
 </html>

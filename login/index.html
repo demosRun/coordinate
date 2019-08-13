@@ -3,7 +3,7 @@
   <head>
     <title>人民好新闻定评会投票</title>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-    <meta name="viewport" content="width=1200, user-scalable=yes, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no, email=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />
@@ -55,8 +55,8 @@
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: center;
-        min-width: 1050px;
-        min-height: 900px;
+        min-width: 1000px;
+        min-height: 750px;
       }
       .title-bar {
         height: 7%;
@@ -120,6 +120,13 @@
         line-height: 50px;
         text-decoration: none;
       }
+      .min {
+        min-width: unset;
+        min-height: unset;
+      }
+      .min .enter-box {
+        width: 98%;
+      }
     </style>
   </head>
   <body>
@@ -145,8 +152,13 @@
       }
       changeBGSize ()
       window.onresize = changeBGSize
-      $('.enter-box')[0].style.height = $('.enter-box')[0].offsetWidth * 0.257 + 'px'
-      
+
+      var ratio = window.innerWidth / window.innerHeight
+      if (ratio < 1) $('body')[0].classList.add('min')
+
+      setTimeout(() => {
+        $('.enter-box')[0].style.height = $('.enter-box')[0].offsetWidth * 0.257 + 'px'
+      }, 0)
     </script>
   </body>
 </html>
