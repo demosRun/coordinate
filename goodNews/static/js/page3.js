@@ -15,7 +15,7 @@ var ratio = window.innerWidth / window.innerHeight
 if (ratio > 1) {
   $('.box-content')[0].style.height = (document.body.clientHeight - (document.body.clientHeight * 0.08)) - 100 + 'px'
 } else {
-  $('.box-content')[0].style.height = (document.body.clientHeight - (document.body.clientHeight * 0.26)) - 140 + 'px'
+  $('.box-content')[0].style.height = (document.body.clientHeight - (document.body.clientHeight * 0.18)) - 130 + 'px'
 }
 
 

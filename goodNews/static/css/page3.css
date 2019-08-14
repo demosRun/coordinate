@@ -7,7 +7,7 @@ body {
   min-height: 750px;
 }
 .title-bar {
-  height: 8%;
+  height: 6%;
   background-color: #ba0319;
 }
 .logo-box {
@@ -46,7 +46,7 @@ body {
 }
 .content .left {
   background-image: url(../resource/decorate-bg.jpg);
-  background-size: auto 100%;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .box {
@@ -226,15 +226,18 @@ label.checkbox.red span {
   position: absolute;
   bottom: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .min .menu-box .menu {
   float: left;
   line-height: 30px;
-  margin: 5px 0;
   padding: 0;
   width: 33.33%;
   text-align: center;
+  font-size: 14px;
+  margin: 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .min .menu-box a {
@@ -278,7 +281,7 @@ label.checkbox.red span {
 }
 
 .min .content .right {
-  height: 72%;
+  height: 80%;
   overflow: hidden;
 }
 
@@ -292,4 +295,18 @@ label.checkbox.red span {
 
 .min .box-title-bar span {
   display: none;
+}
+
+input {-webkit-appearance:none; }
+
+.min .card-box-left .top {
+  font-size: 14px;
+}
+
+.min .card-box-left .bottom .bottom-item {
+  font-size: 12px;
+}
+
+.min .table-title {
+  font-size: 12px;
 }
