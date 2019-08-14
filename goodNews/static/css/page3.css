@@ -1,0 +1,295 @@
+body {
+  background-color: #eaeaea;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 750px;
+  min-height: 750px;
+}
+.title-bar {
+  height: 8%;
+  background-color: #ba0319;
+}
+.logo-box {
+  background-color: #95001d;
+}
+.logo-box, .content .left {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: left;
+  background-position: center;
+}
+.logo, .content  .right {
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.right-bar, .content .right {
+  width: 85%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.right-bar .title {
+  height: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .left {
+  background-image: url(../resource/decorate-bg.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.box {
+  background-color: #eaeaea;
+}
+.box-content {
+  margin: 0;
+}
+.box-title-bar {
+  padding: 0 20px;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  background-color: white;
+}
+.box-title-bar span {
+  color: #ab2222;
+  font-size: 14px;
+}
+.box-title-bar input, .box-title-bar .check {
+  border: none;
+  font-size: 14px;
+  color: white;
+  background-color: #928e8d;
+  padding: 0 25px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  top: 10px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.exit {
+  right: 20px;
+}
+.backTop {
+  right: 120px;
+}
+.box-title-bar .send {
+  right: 400px;
+  padding: 0 40px;
+  background-color: #b7241c;
+}
+.box-title-bar .check {
+  right: 590px;
+}
+.box-title-bar .check span {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  display: block;
+  width: 20px;
+  background-color: #e22e48;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.box-title-bar input:hover {
+  background-color: #606060;
+}
+.table-title {
+  line-height: 30px;
+  font-size: 16px;
+  background-color: #bbbbbb;
+  color: white;
+  padding-right: 9%;
+  padding-left: 2%;
+}
+.table-title .table-title-item {
+  width: 25%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+/* 多选框 */
+label.checkbox.red {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+}
+label.checkbox.red input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  left: -100%;
+  top: -100%;
+}
+label.checkbox.red input[type="checkbox"]:focus:checked ~ span {
+  border: 2px solid #c76870;
+}
+label.checkbox.red input[type="checkbox"]:checked ~ span {
+  color: #FFFFFF;
+  background: #c76870 url('../resource/check.png') 50% 40% no-repeat;
+  border: 2px solid #c76870;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+label.checkbox.red span {
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c76870;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.card-box {
+  margin: 10px 0;
+  overflow: auto;
+}
+.card-box-left {
+  float: left;
+  width: 94%;
+  position: relative;
+}
+.card-box-left .top {
+  color: #606060;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+.card-box li {
+  padding: 0 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+.card-box-right {
+  float: left;
+  width: 6%;
+  height: 77px;
+  position: relative;
+  cursor: pointer;
+}
+.card-box-left .bottom .bottom-item {
+  float: left;
+  width: 25%;
+  text-align: center;
+  line-height: 28px;
+  color: #82868b;
+  font-size: 14px;
+  margin: 4px 0;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.card-box-left .bottom .bottom-item:last-child {
+  border-right: none;
+}
+
+.min .menu-box {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.min .menu-box .menu {
+  float: left;
+  line-height: 30px;
+  margin: 5px 0;
+  padding: 0;
+  width: 33.33%;
+  text-align: center;
+}
+
+.min .menu-box a {
+  text-align: center;
+}
+
+.min .menu-box:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.min .box-title-bar {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  bottom: 0;
+  padding: 0;
+  z-index: 9;
+  box-shadow: 1px 1px 5px #888888;
+}
+.min .box-title-bar .check span {
+  display: block;
+}
+.min .box-title-bar .backTop, .min .box-title-bar .exit, .min .box-title-bar .send, .min .box-title-bar .check {
+  right: unset;
+  position: relative;
+  float: right;
+  padding: 0;
+  margin: 0 1%;
+  border-radius: 5px;
+  width: 23%;
+  text-align: center;
+}
+
+.min .card-box {
+  margin: 0;
+}
+
+.min .content .right {
+  height: 72%;
+  overflow: hidden;
+}
+
+.min .card-box-left {
+  width: 90%;
+}
+
+.min .card-box-right {
+  width: 10%;
+}
+
+.min .box-title-bar span {
+  display: none;
+}

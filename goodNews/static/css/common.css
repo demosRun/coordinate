@@ -173,9 +173,6 @@ textarea:-ms-input-placeholder {
   border-bottom: 1px solid white;
 }
 
-.box-title-bar input:hover, .box-title-bar .back:hover {
-  background-color: #868282;
-}
 
 /* 
 Based on Bootstrap's .sr-only class. 
@@ -311,4 +308,26 @@ a {
 .min {
   min-width: unset;
   min-height: unset;
+}
+
+.min .logo-box {
+  display: none;
+}
+.min .content .left {
+  float: unset;
+  width: 100%;
+  height: 28%;
+  background-image: url('../resource/min-decorate-bg.jpg');
+}
+.min .right-bar, .min .content .right {
+  width: 100%;
+}
+
+.min .right-bar .title {
+  height: 40%;
+}
+
+.min .table-title {
+  padding-right: 16%;
+  padding-left: 5%;
 }

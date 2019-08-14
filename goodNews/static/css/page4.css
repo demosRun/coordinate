@@ -1,0 +1,226 @@
+body {
+  background-color: #eaeaea;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 750px;
+  min-height: 750px;
+}
+.title-bar {
+  height: 8%;
+  background-color: #ba0319;
+}
+.logo-box {
+  background-color: #95001d;
+}
+.logo-box, .content .left {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: left;
+  background-position: center;
+}
+.logo, .content  .right {
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .left {
+  background-image: url(../resource/decorate-bg.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.box {
+  margin: 25px 10px;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+.box-title-bar {
+  margin: 0 20px;
+  position: relative;
+  height: 37px;
+  line-height: 37px;
+  margin-top: 20px;
+}
+.box-title-bar span {
+  display: block;
+  background-color: #ba0017;
+  color: white;
+  width: 150px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+}
+.box-title-bar .back {
+  border: none;
+  font-size: 14px;
+  color: white;
+  background-color: #928e8d;
+  padding: 0 25px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  cursor: pointer;
+  line-height: 30px;
+}
+.right-bar, .content .right {
+  width: 85%;
+  height: 100%;
+  float: left;
+  position: relative;
+  overflow: auto;
+}
+.right-bar .title {
+  height: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.card {
+  background-color: white;
+  border-radius: 5px;
+  float: left;
+  width: 99%;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 5px #d4d3d3;
+}
+.card .container {
+  margin: 15px;
+}
+.card h1 {
+  line-height: 60px;
+  color: #888888;
+  margin: 0 18px;
+}
+.card h3 {
+  color: #888888;
+  margin: 0 20px;
+  line-height: 60px;
+}
+.card a {
+  display: inline;
+}
+.card .title {
+  color: #a24f4f;
+  line-height: 30px;
+  margin: 0 20px;
+}
+.card .line {
+  border-bottom: 1px solid #eeeeee;
+}
+.card ul {
+  margin: 0 20px;
+}
+.card li {
+  float: left;
+  width: 50%;
+  line-height: 40px;
+  color: #888888;
+  font-size: 14px;
+  font-weight: bold;
+}
+.card ul:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.min-card {
+  width: 50%;
+  float: left;
+}
+.min-card .card {
+  width: 98%;
+}
+.edit h2,  .edit h3 {
+  display: inline;
+}
+.edit .red {
+  color: #a24f4f;
+}
+.edit .container {
+  padding: 0px 20px;
+  margin: 1px 15px;
+}
+.text {
+  color: #888888;
+  height: 247px;
+  margin: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  overflow: auto;
+}
+.img-box {
+  height: 257px;
+  overflow: auto;
+}
+.img-box a {
+  float: left;
+  margin: 5px;
+  display: block;
+  width: 46%;
+  height: 96%;
+  position: relative;
+}
+.img-box a img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.min .min-card {
+  float: unset;
+  width: unset;
+}
+
+.min .right .box {
+  margin: 0;
+  height: 97%;
+  padding: 2%;
+  position: relative;
+  overflow: auto;
+}
+
+.min .card h1 {
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.min .card li {
+  float: unset;
+  width: 100%;
+}
+
+.min .box-title-bar .back {
+  top: 2px;
+}
+
+.min .content .left {
+  display: none;
+}
+
+.min .text {
+  height: unset;
+  overflow: unset;
+}
+
+.min .card h3 {
+  color: #888888;
+  margin: 0 20px;
+  line-height: 40px;
+}

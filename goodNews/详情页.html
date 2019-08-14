@@ -3,7 +3,7 @@
   <head>
     <title>人民好新闻申报页</title>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no, email=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />
@@ -29,192 +29,7 @@
     <meta name="browsermode" content="application">
     <meta name="x5-page-mode" content="app">
     <link rel="stylesheet" href="./static/css/common.css">
-    <style>
-      body {
-        background-color: #eaeaea;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        min-width: 1000px;
-        min-height: 750px;
-      }
-      .title-bar {
-        height: 8%;
-        background-color: #ba0319;
-      }
-      .logo-box {
-        background-color: #95001d;
-      }
-      .logo-box, .content .left {
-        width: 15%;
-        height: 100%;
-        position: relative;
-        float: left;
-        background-position: center;
-      }
-      .logo, .content  .right {
-        height: 50%;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-      }
-      .content .left {
-        background-image: url(./static/resource/decorate-bg.jpg);
-        min-height: 880px;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-      }
-      .box {
-        margin: 25px 10px;
-        padding: 10px;
-        padding-bottom: 40px;
-      }
-      .box-title-bar {
-        margin: 0 20px;
-        position: relative;
-        height: 50px;
-        line-height: 50px;
-      }
-      .box-title-bar span {
-        display: block;
-        background-color: #ba0017;
-        color: white;
-        width: 150px;
-        text-align: center;
-        font-size: 18px;
-        font-weight: bold;
-        border-radius: 10px 10px 0 0;
-      }
-      .box-title-bar .back {
-        border: none;
-        font-size: 14px;
-        color: white;
-        background-color: #928e8d;
-        padding: 0 25px;
-        height: 30px;
-        border-radius: 15px;
-        position: absolute;
-        right: 0;
-        top: 5px;
-        cursor: pointer;
-        line-height: 30px;
-      }
-      .right-bar, .content .right {
-        width: 85%;
-        height: 100%;
-        float: left;
-        position: relative;
-        overflow: auto;
-      }
-      .right-bar .title {
-        height: 60%;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-      }
-      .card {
-        background-color: white;
-        border-radius: 5px;
-        float: left;
-        width: 99%;
-        margin-bottom: 15px;
-        box-shadow: 2px 2px 5px #d4d3d3;
-      }
-      .card .container {
-        margin: 15px;
-      }
-      .card h1 {
-        line-height: 60px;
-        color: #888888;
-        margin: 0 18px;
-      }
-      .card h3 {
-        color: #888888;
-        margin: 0 20px;
-        line-height: 60px;
-      }
-      .card a {
-        display: inline;
-      }
-      .card .title {
-        color: #a24f4f;
-        line-height: 30px;
-        margin: 0 20px;
-      }
-      .card .line {
-        border-bottom: 1px solid #eeeeee;
-      }
-      .card ul {
-        margin: 0 20px;
-      }
-      .card li {
-        float: left;
-        width: 50%;
-        line-height: 40px;
-        color: #888888;
-        font-size: 14px;
-        font-weight: bold;
-      }
-      .card ul:after {
-        content: "";
-        height: 0;
-        line-height: 0;
-        display: block;
-        visibility: hidden;
-        clear: both;
-      }
-      .min {
-        width: 50%;
-        float: left;
-      }
-      .min .card {
-        width: 98%;
-      }
-      .edit h2,  .edit h3 {
-        display: inline;
-      }
-      .edit .red {
-        color: #a24f4f;
-      }
-      .edit .container {
-        padding: 0px 20px;
-        margin: 1px 15px;
-      }
-      .text {
-        color: #888888;
-        height: 247px;
-        margin: 10px;
-        font-size: 16px;
-        line-height: 26px;
-        overflow: auto;
-      }
-      .img-box {
-        height: 257px;
-        overflow: auto;
-      }
-      .img-box a {
-        float: left;
-        margin: 5px;
-        display: block;
-        width: 46%;
-        height: 96%;
-        position: relative;
-      }
-      .img-box a img {
-        width: 100%;
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="./static/css/page4.css">
   </head>
   <body>
     <!-- 顶部标题栏 -->
@@ -256,7 +71,7 @@
             </div>
           </div>
           <!-- 迷你卡片1 -->
-          <div class="min clear">
+          <div class="min-card clear">
             <div class="card edit">
               <div class="container">
                 <h2 class="red">是否推荐总编辑奖:</h2>
@@ -274,7 +89,7 @@
             </div>
           </div>
           <!-- 迷你卡片2 -->
-          <div class="min clear">
+          <div class="min-card clear">
             <div class="card">
               <div class="container">
                 <h2 class="title">作品简介</h2>
@@ -284,7 +99,7 @@
             </div>
           </div>
           <!-- 迷你卡片3 -->
-          <div class="min clear">
+          <div class="min-card clear">
             <div class="card">
               <div class="container">
                 <h2 class="title">推荐理由</h2>
@@ -294,7 +109,7 @@
             </div>
           </div>
           <!-- 迷你卡片4 -->
-          <div class="min clear">
+          <div class="min-card clear">
             <div class="card">
               <div class="container">
                 <h2 class="title">推荐理由</h2>
@@ -315,42 +130,6 @@
       </div>
     </div>
     <script src="./static/js/jquery-1.12.4.min.js" type="text/javascript" charset="UTF-8"></script>
-    <script>
-      function changeBGSize () {
-        var ratio = window.innerWidth / window.innerHeight
-        // console.log(ratio)
-        if (ratio > 1.6) {
-          $('body').css('background-size', '100% auto')
-        } else {
-          $('body').css('background-size', 'auto 100%')
-        }
-      }
-      changeBGSize ()
-      window.onresize = changeBGSize
-
-      // 水波纹按钮
-      function createRipple() {
-        //Create Ripple
-        const ripple = document.createElement("div");
-        ripple.className = "ripple-effect";
-
-
-        this.appendChild(ripple);
-
-        ripple.style.top = (event.layerY - (ripple.offsetWidth / 2)) + "px";
-        ripple.style.left = (event.layerX - (ripple.offsetHeight / 2)) + "px";
-
-        ripple.addEventListener("animationend", destroyRipple, false);
-        ripple.addEventListener("webkitAnimationEnd", destroyRipple, false);
-        ripple.addEventListener("oAnimationEnd", destroyRipple, false);
-        ripple.addEventListener("MSAnimationEnd", destroyRipple, false);
-      }
-
-      function destroyRipple() {
-        this.parentElement.removeChild(this)
-      }
-      $('.ripple').on('mousedown', createRipple)
-      $('.ripple').on('touchstart', createRipple)
-    </script>
+    <script src="./static/js/page4.js" type="text/javascript" charset="UTF-8"></script>
   </body>
 </html>

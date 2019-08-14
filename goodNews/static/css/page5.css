@@ -1,0 +1,293 @@
+body {
+  background-color: #eaeaea;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 750px;
+  min-height: 750px;
+}
+.title-bar {
+  height: 8%;
+  background-color: #ba0319;
+}
+.content {
+  height: 92%;
+  overflow: hidden;
+}
+.logo-box {
+  background-color: #95001d;
+}
+.logo-box, .content .left {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: left;
+  background-position: center;
+}
+.logo, .content  .right {
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .left {
+  background-image: url(../resource/decorate-bg.jpg);
+  min-height: 880px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.box {
+  margin: 25px 10px;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+.right .back {
+  border: none;
+  font-size: 14px;
+  color: white;
+  background-color: #928e8d;
+  padding: 0 25px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  cursor: pointer;
+}
+.right-bar, .content .right {
+  width: 85%;
+  height: 100%;
+  float: left;
+  position: relative;
+  overflow: auto;
+}
+.right-bar .title {
+  height: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.card {
+  background-color: white;
+  border-radius: 5px;
+  float: left;
+  width: 99%;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 5px #d4d3d3;
+  position: relative;
+}
+.card .container {
+  margin: 15px;
+}
+.card h1 {
+  line-height: 60px;
+  color: #888888;
+  margin: 0 18px;
+}
+.card h3 {
+  color: #888888;
+  margin: 0 20px;
+  line-height: 60px;
+}
+.card a {
+  display: inline;
+}
+.card .title {
+  color: #a24f4f;
+  line-height: 30px;
+  margin: 0 28px;
+}
+.card .line {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eeeeee;
+}
+.card ul {
+  margin: 0 20px;
+}
+.card li {
+  float: left;
+  width: 50%;
+  line-height: 40px;
+  color: #888888;
+  font-size: 14px;
+  font-weight: bold;
+}
+.card ul:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.min {
+  width: 50%;
+  float: left;
+}
+.min .card {
+  width: 98%;
+}
+.edit h2,  .edit h3 {
+  display: inline;
+}
+.edit .red {
+  color: #a24f4f;
+}
+.edit .container {
+  margin: 1px 15px;
+}
+.text {
+  color: #888888;
+  height: 247px;
+  margin: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  overflow: auto;
+}
+.img-box {
+  height: 257px;
+  overflow: auto;
+}
+.img-box a {
+  float: left;
+  margin: 5px;
+  display: block;
+}
+.img-box a img {
+  width: 260px;
+  height: 146px;
+  display: block;
+}
+.input-bar {
+  padding-top: 5px;
+  position: relative;
+}
+.input-bar input, .input-bar select, .input-bar textarea {
+  background-color: #f4f4f4;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 5px 0;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  float: left;
+  display: block;
+  color: #333;
+}
+.input-bar textarea {
+  height: 242px;
+}
+.input-bar textarea.mini {
+  height: 99px;
+}
+.input-bar select {
+  color: #896469;
+}
+.long {
+  width: 75%;
+}
+.short {
+  width: 21%;
+}
+.medium {
+  width: 52%;
+}
+.separate {
+  font-size: 20px;
+  color: #561e31;
+  line-height: 30px;
+  height: 30px;
+  display: block;
+  float: left;
+  margin: 5px 0;
+  width: 2%;
+  text-align: center;
+  color: #6d3446;
+}
+.min .separate {
+  width: 4%;
+}
+.min input, .min textarea {
+  width: 96%;
+}
+.info {
+  color: #c5c5c5;
+  position: absolute;
+  width: 100px;
+  right: 10px;
+  bottom: 10px;
+  line-height: 20px;
+  text-align: right;
+  font-size: 12px;
+  overflow: hidden;
+}
+.new-image {
+  float: left;
+  margin: 5px;
+  display: block;
+  width: 190px;
+  height: 245px;
+  width: 46%;
+  position: relative;
+  background-image: url(../resource/add.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  overflow: hidden;
+}
+.new-image input {
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.new-image img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  pointer-events: none;
+  height: auto;
+}
+.bottom-bar .submit {
+  background-color: #b7241c;
+  color: white;
+  width: 180px;
+  line-height: 55px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 40px;
+  font-size: 20px;
+  box-shadow: 1px 1px 5px #888888;
+}
+.bottom-bar .backto {
+  background-color: white;
+  width: 180px;
+  line-height: 51px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #b7241c;
+  font-size: 20px;
+  border: 2px solid #b7241c;
+  box-sizing: border-box;
+}
+.radio-box, .red {
+  line-height: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.radio-box label {
+  cursor: pointer;
+}

@@ -1,0 +1,156 @@
+body {
+  background-color: #eaeaea;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 750px;
+  min-height: 750px;
+}
+.title-bar {
+  height: 8%;
+  background-color: #ba0319;
+}
+.logo-box {
+  background-color: #95001d;
+}
+.logo-box, .content .left {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: left;
+  background-position: center;
+}
+.logo, .content  .right {
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.right-bar, .content .right {
+  width: 85%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.right-bar .title {
+  height: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .left {
+  background-image: url(../resource/decorate-bg.jpg);
+  min-height: 880px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.box {
+  background-color: white;
+  margin: 25px 10px;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+.box-title-bar {
+  margin: 0 20px;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+}
+.box-title-bar span {
+  color: #a24f4f;
+  font-size: 14px;
+  font-weight: bold;
+}
+.box-title-bar input {
+  border: none;
+  font-size: 14px;
+  color: white;
+  background-color: #928e8d;
+  padding: 0 25px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  cursor: pointer;
+}
+.box-title-bar input:hover {
+  background-color: #606060;
+}
+.box-content-left {
+  float: left;
+  width: 20%;
+  position: relative;
+  height: 135px;
+}
+.box-content-left .start {
+  background-color: #ba0319;
+  color: white;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.box-content-right {
+  float: left;
+  width: 80%;
+}
+.box-content-right-title {
+  background-color: #c7c8c3;
+  color: white;
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.box-content-right li {
+  color: #606060;
+  font-size: 20px;
+  line-height: 40px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  padding: 0 20px;
+  border-radius: 5px;
+  position: relative;
+}
+.box-content-right li a {
+  text-align: left;
+}
+.box-content-right li a:hover {
+  outline: none;
+  text-decoration: none;
+}
+.box-content-right-title li .control {
+  position: absolute;
+}
+.control {
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.control a:last-child {
+  border-right: none;
+}
+.control a {
+  padding: 0 5px;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  border-right: 1px solid #ccc;
+}
