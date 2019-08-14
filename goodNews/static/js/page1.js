@@ -15,3 +15,7 @@ function changeBGSize () {
 }
 changeBGSize ()
 window.onresize = changeBGSize
+
+function inputEnd() {
+  $(window).scrollTop(0)
+}
