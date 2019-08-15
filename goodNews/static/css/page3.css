@@ -46,9 +46,10 @@ body {
 }
 .content .left {
   background-image: url(../resource/decorate-bg.jpg);
-  background-size: 100% auto;
+  background-size: auto 100%;
   background-repeat: no-repeat;
 }
+
 .box {
   background-color: #eaeaea;
 }
@@ -73,11 +74,12 @@ body {
   background-color: #928e8d;
   padding: 0 25px;
   height: 30px;
-  border-radius: 15px;
+  border-radius: 5px;
   position: absolute;
   top: 10px;
   line-height: 30px;
   cursor: pointer;
+  box-shadow: 1px 1px 3px #3c3b3b;
 }
 .exit {
   right: 20px;
@@ -198,6 +200,7 @@ label.checkbox.red span {
   background-color: white;
   border: 1px solid #ccc;
   margin: 10px;
+  box-shadow: 1px 1px 1px #e8dddd;
 }
 .card-box-right {
   float: left;

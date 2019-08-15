@@ -127,6 +127,18 @@
       .min .enter-box {
         width: 98%;
       }
+      .info-text {
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 40px;
+        color: #FFEB3B;
+        font-size: 28px;
+      }
     </style>
   </head>
   <body>
@@ -154,7 +166,10 @@
       window.onresize = changeBGSize
 
       var ratio = window.innerWidth / window.innerHeight
-      if (ratio < 1) $('body')[0].classList.add('min')
+      if (ratio < 1) {
+        document.body.classList.add('min')
+        document.body.innerHTML = '<div class="info-text">请使用电脑进行访问!</div>'
+      }
 
       setTimeout(() => {
         $('.enter-box')[0].style.height = $('.enter-box')[0].offsetWidth * 0.257 + 'px'

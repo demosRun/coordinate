@@ -6,7 +6,10 @@ function back () {
 }
 function changeBGSize () {
   var ratio = window.innerWidth / window.innerHeight
-  // console.log(ratio)
+  if (ratio < 1) {
+    document.body.classList.add('min-box')
+    document.body.innerHTML = '<div class="info-text">请使用电脑进行访问!</div>'
+  }
   if (ratio > 1.6) {
     $('body').css('background-size', '100% auto')
   } else {

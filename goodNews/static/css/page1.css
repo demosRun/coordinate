@@ -3,8 +3,6 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 750px;
-  min-height: 750px;
 }
 .logo {
   position: absolute;
@@ -83,6 +81,15 @@ option {
   line-height: 40px;
 }
 
+.main-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 18%;
+  margin: auto;
+  height: 14%;
+}
+
 .min {
   background-image: url(../resource/min-login-bg.jpg);
   background-size: 100%;
@@ -98,4 +105,10 @@ option {
 
 .min .input-bar {
   font-size: 16px;
+}
+
+.min .main-title {
+  height: unset;
+  width: 80%;
+  top: 22%;
 }

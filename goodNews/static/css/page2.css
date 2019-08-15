@@ -55,16 +55,18 @@ body {
   margin: 25px 10px;
   padding: 10px;
   padding-bottom: 40px;
+  border-radius: 5px;
 }
 .box-title-bar {
-  margin: 0 20px;
+  padding: 0 20px;
   position: relative;
   height: 40px;
   line-height: 40px;
+  border-bottom: 1px solid #ccc;
 }
 .box-title-bar span {
   color: #a24f4f;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
 }
 .box-title-bar input {
@@ -95,7 +97,7 @@ body {
   display: inline-block;
   height: 35px;
   line-height: 35px;
-  border-radius: 10px;
+  border-radius: 5px;
   position: absolute;
   left: 0;
   right: 0;
@@ -103,8 +105,12 @@ body {
   bottom: 0;
   margin: auto;
   width: 100px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  box-shadow: 2px 2px 6px #bba8a8;
 }
 .box-content-right {
   float: left;
@@ -120,13 +126,14 @@ body {
 }
 .box-content-right li {
   color: #606060;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px;
   margin: 10px 0;
   border: 1px solid #ccc;
   padding: 0 20px;
   border-radius: 5px;
   position: relative;
+  box-shadow: 1px 1px 1px #e8dddd;
 }
 .box-content-right li a {
   text-align: left;
@@ -151,6 +158,16 @@ body {
   padding: 0 5px;
   float: left;
   height: 20px;
+  font-size: 14px;
   line-height: 20px;
   border-right: 1px solid #ccc;
+}
+
+.title-info-box p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.right .box {
+  box-shadow: 2px 2px 5px #888888;
 }

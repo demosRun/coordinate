@@ -16,6 +16,9 @@ function changeBGSize () {
 changeBGSize ()
 window.onresize = changeBGSize
 
+// 屏幕方向发生改变事件
+window.onorientationchange = changeBGSize
+
 function inputEnd() {
   $(window).scrollTop(0)
 }
