@@ -137,6 +137,7 @@ body {
 }
 .box-content-right li a {
   text-align: left;
+  width: 90%;
 }
 .box-content-right li a:hover {
   outline: none;
@@ -160,6 +161,7 @@ body {
   height: 20px;
   font-size: 14px;
   line-height: 20px;
+  width: auto !important;
   border-right: 1px solid #ccc;
 }
 

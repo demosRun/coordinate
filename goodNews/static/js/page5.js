@@ -47,6 +47,7 @@ $(".file-upload").change(function () {
     // console.log('图片加载成功')
     URL.revokeObjectURL(imgUrl)
     preview.style.display = 'block'
+    parent.querySelector('.delete').style.display = 'block'
   }
 })
 // 判断必须输入的内容是否输入正确

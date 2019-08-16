@@ -291,3 +291,20 @@ body {
 .radio-box label {
   cursor: pointer;
 }
+
+.card .delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 14px;
+  color: white;
+  display: none;
+}
+
+.card .delete:hover {
+  background-color: #b7241c;
+}
