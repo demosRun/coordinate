@@ -106,7 +106,7 @@ body {
 .card h3 {
   color: #888888;
   margin: 0 20px;
-  line-height: 60px;
+  line-height: 48px;
 }
 .card a {
   display: inline;
@@ -157,7 +157,7 @@ body {
 }
 .text {
   color: #888888;
-  height: 247px;
+  height: 339px;
   margin: 10px;
   font-size: 16px;
   line-height: 26px;
@@ -228,4 +228,14 @@ body {
   color: #888888;
   margin: 0 20px;
   line-height: 40px;
+}
+
+.card h4 {
+  color: #888888;
+  margin: 0 20px;
+  line-height: 30px;
+  word-wrap: break-word;
+  display: block;
+  height: 140px;
+  overflow: auto;
 }

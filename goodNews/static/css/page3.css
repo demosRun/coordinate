@@ -219,6 +219,7 @@ label.checkbox.red span {
   margin: 4px 0;
   border-right: 1px solid #ccc;
   box-sizing: border-box;
+  height: 100%;
 }
 .card-box-left .bottom .bottom-item:last-child {
   border-right: none;
