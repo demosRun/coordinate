@@ -1,8 +1,12 @@
+html, body {
+  height: 106vh;
+}
 body {
   background-image: url('../resource/login-bg.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
+  
   min-width: 750px;
   min-height: 480px;
 }

@@ -2,6 +2,7 @@
 function changeBGSize () {
   var ratio = window.innerWidth / window.innerHeight
   // console.log(ratio)
+  // alert(ratio)
   if (ratio < 1) {
     document.body.classList.add('min')
   }

@@ -323,5 +323,6 @@ input {-webkit-appearance:none; }
   box-shadow: none;
   font-size: 14px;
   display: block;
+  width: 100%;
   text-align-last: center;
 }

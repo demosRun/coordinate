@@ -329,8 +329,8 @@ a {
 }
 
 .min, .min-box {
-  min-width: unset;
-  min-height: unset;
+  min-width: 100px;
+  min-height: 100px;
 }
 
 .min .logo-box {
