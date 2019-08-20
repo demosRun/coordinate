@@ -22,7 +22,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="screen-orientation" content="portrait">
+    <meta name="screen-orientation" content="landscape">
     <meta name="x5-orientation" content="portrait">
     <meta name="full-screen" content="yes">
     <meta name="x5-fullscreen" content="true">
@@ -47,8 +47,20 @@
       <div class="left">
         <ul class="menu-box">
           <li class="menu active"><a href="#">定评会投票</a></li>
-          <li class="menu"><a href="#">人民网平票</a></li>
-          <li class="menu"><a href="#">人民日报平票</a></li>
+          <li class="menu">
+            <select id="rmwpp" onchange="turn('rmwpp')">
+              <option value="" disabled selected style="display:none;">人民网平票</option>
+              <option value="#">人民网平票一等奖</option>
+              <option value="#">人民网平票二等奖</option>
+            </select>
+          </li>
+          <li class="menu">
+            <select id="rmrbpp" onchange="turn('rmrbpp')">
+              <option value="" disabled selected style="display:none;">人民日报平票</option>
+              <option value="#">人民日报平票一等奖</option>
+              <option value="#">人民日报平票二等奖</option>
+            </select>
+          </li>
         </ul>
       </div>
       <div class="right">

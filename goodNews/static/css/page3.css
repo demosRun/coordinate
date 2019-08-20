@@ -314,3 +314,12 @@ input {-webkit-appearance:none; }
 .min .table-title {
   font-size: 12px;
 }
+
+.min .menu-box .menu select {
+  height: 30px;
+  text-align: center;
+  box-shadow: none;
+  font-size: 14px;
+  display: block;
+  text-align-last: center;
+}

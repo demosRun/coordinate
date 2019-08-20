@@ -272,12 +272,12 @@ input[type="radio"]:disabled + .a11y-radio-label::before {
 .menu-box .menu {
   color: white;
   line-height: 45px;
-  margin: 10px 0;
   padding: 0 15px;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
   font-size: 16px;
+  margin: 48px 0;
   box-shadow: 1px 1px 3px #6d6d6d;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -354,4 +354,24 @@ a {
 .min .table-title {
   padding-right: 16%;
   padding-left: 5%;
+}
+
+
+.menu-box .menu select {
+  width: 100%;
+  height: 45px;
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.menu-box .menu option {
+  color: black;
 }

@@ -44,3 +44,8 @@ function scrollToTop () {
   console.log('返回顶部')
   $('.box-content')[0].scrollTop = 0
 }
+
+// 跳转到指定页面
+function turn (id) {
+  window.location.replace($('#' + id)[0].value)
+}
