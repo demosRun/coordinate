@@ -7,9 +7,10 @@ function changeBGSize () {
   }
   if (ratio < 1) {
     document.body.classList.add('min')
-    console.log($('.login-box').width())
     document.body.style.backgroundSize = '100% auto'
     $('.login-box')[0].style.height = $('.login-box').width() / 1.52 + 'px'
+  } else {
+    document.body.classList.remove('min')
   }
 }
 setTimeout(changeBGSize, 0)
@@ -17,7 +18,7 @@ setTimeout(changeBGSize, 0)
 window.onresize = changeBGSize
 
 // 屏幕方向发生改变事件
-window.onorientationchange = changeBGSize
+// window.onorientationchange = changeBGSize
 
 function inputEnd() {
   $(window).scrollTop(0)
