@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   min-width: 750px;
-  min-height: 750px;
+  min-height: 480px;
 }
 .title-bar {
   height: 6%;
@@ -88,12 +88,12 @@ body {
   right: 120px;
 }
 .box-title-bar .send {
-  right: 400px;
+  right: 250px;
   padding: 0 40px;
   background-color: #b7241c;
 }
 .box-title-bar .check {
-  right: 590px;
+  right: 380px;
 }
 .box-title-bar .check span {
   position: absolute;
@@ -180,6 +180,8 @@ label.checkbox.red span {
 .card-box {
   margin: 10px 0;
   overflow: auto;
+  height: 300px;
+  height: calc(94vh - 60px);
 }
 .card-box-left {
   float: left;

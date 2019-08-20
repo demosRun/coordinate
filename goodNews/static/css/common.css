@@ -8,7 +8,6 @@ body, html {
   overflow: hidden;
 }
 body {
-  position: absolute;
   background-color: #f2ebe2;
 }
 h1, h2, h3, h4, h5, input {
@@ -97,6 +96,7 @@ a {
 .content {
   height: 94%;
   width: 100%;
+  position: relative;
 }
 textarea{ resize:none;}
 /* 滚动条 */

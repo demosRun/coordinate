@@ -1,19 +1,19 @@
 function changeBGSize () {
   var ratio = window.innerWidth / window.innerHeight
-  // console.log(ratio)
   if (ratio > 1.6) {
-    $('body').css('background-size', '100% auto')
+    document.body.style.backgroundSize = '100% auto'
   } else {
-    $('body').css('background-size', 'auto 100%')
+    document.body.style.backgroundSize = '100% auto'
   }
   if (ratio < 1) {
     document.body.classList.add('min')
-    $('body').css('background-size', '100% auto')
     console.log($('.login-box').width())
+    document.body.style.backgroundSize = '100% auto'
     $('.login-box')[0].style.height = $('.login-box').width() / 1.52 + 'px'
   }
 }
-changeBGSize ()
+setTimeout(changeBGSize, 0)
+
 window.onresize = changeBGSize
 
 // 屏幕方向发生改变事件

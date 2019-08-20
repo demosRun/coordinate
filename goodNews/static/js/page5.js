@@ -50,6 +50,7 @@ $(".file-upload").change(function () {
     parent.querySelector('.delete').style.display = 'block'
   }
 })
+
 // 判断必须输入的内容是否输入正确
 function submitData() {
   var mustList = ['zpmc', 'tjjx', 'bm', 'fbsj', 'ycxwlx', 'zz', 'tbr', 'tbdh', 'fwl', 'zzl', 'ljdz', 'zpjj', 'tjly']
