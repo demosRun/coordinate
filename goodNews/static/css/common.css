@@ -94,7 +94,7 @@ a {
   }
 }
 .content {
-  height: 94%;
+  height: 92%;
   width: 100%;
   position: relative;
 }
@@ -271,7 +271,7 @@ input[type="radio"]:disabled + .a11y-radio-label::before {
 
 .menu-box .menu {
   color: white;
-  line-height: 45px;
+  line-height: 35px;
   padding: 0 15px;
   border-radius: 6px;
   font-weight: bold;
@@ -359,7 +359,7 @@ a {
 
 .menu-box .menu select {
   width: 100%;
-  height: 45px;
+  height: 35px;
   font-size: 12px;
   background-color: transparent;
   border: none;
