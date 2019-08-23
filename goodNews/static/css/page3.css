@@ -326,3 +326,16 @@ input {-webkit-appearance:none; }
   width: 100%;
   text-align-last: center;
 }
+
+.title-bar marquee {
+  display: none;
+}
+
+.min .title-bar marquee {
+  display: block;
+  position: absolute;
+  top: 8%;
+  z-index: 9;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
