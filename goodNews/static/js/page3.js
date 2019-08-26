@@ -1,7 +1,7 @@
 // 计算合适的屏幕大小
 function changeBGSize () {
   var ratio = window.innerWidth / window.innerHeight
-  console.log(ratio)
+  // console.log(ratio)
   // alert(ratio)
   if (ratio < 1) {
     document.body.classList.add('min')
@@ -11,11 +11,12 @@ function changeBGSize () {
   if (ratio > 1) {
     $('.box-content')[0].style.height = (document.body.clientHeight - (document.body.clientHeight * 0.08)) - 100 + 'px'
   } else {
-    $('.box-content')[0].style.height = (document.body.clientHeight - (document.body.clientHeight * 0.18)) - 130 + 'px'
+    $('.box-content')[0].style.height = (document.body.clientHeight * 0.72 - 80 + 'px')
   }
   if (ratio > 1.71) {
     $('.content .left')[0].style.backgroundSize = '100% auto'
   }
+  document.body.style.display = 'block'
 }
 changeBGSize ()
 window.onresize = changeBGSize
