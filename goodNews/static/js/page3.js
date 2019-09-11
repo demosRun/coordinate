@@ -13,10 +13,10 @@ function changeBGSize () {
   } else {
     $('.box-content')[0].style.height = (document.body.clientHeight * 0.72 - 80 + 'px')
   }
-  if (ratio > 1.71) {
+	if (ratio > 1.71) {
     $('.content .left')[0].style.backgroundSize = '100% auto'
   }
-  document.body.style.display = 'block'
+  document.body.style.opacity = '1'
 }
 changeBGSize ()
 window.onresize = changeBGSize
@@ -53,7 +53,7 @@ setTimeout(() => {
     }
   }
   // 判断是否为同一内容
-  if (document.getElementsByClassName('top')[0].innerText == data.key) {
+  if (document.getElementsByClassName('top')[0] && document.getElementsByClassName('top')[0].innerText == data.key) {
     var ind = 0
     $('.tp').each(function(key, item) {
       if (data.check[key]) {
@@ -82,4 +82,4 @@ setTimeout(() => {
     localStorage.setItem("check", JSON.stringify(storage))
     $('.check span')[0].innerText = checkList.length
   })
-}, 0)
+}, 100)

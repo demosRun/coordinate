@@ -5,7 +5,7 @@ body {
   background-position: center;
   min-width: 750px;
   min-height: 480px;
-  display: none;
+  opacity: 0;
 }
 .title-bar {
   height: 8%;
@@ -47,6 +47,7 @@ body {
 }
 .content .left {
   background-image: url(../resource/decorate-bg.jpg);
+  background-size: auto 100%;
   background-repeat: no-repeat;
 }
 
@@ -88,12 +89,19 @@ body {
   right: 120px;
 }
 .box-title-bar .send {
-  right: 250px;
-  padding: 0 40px;
+  right: 380px;
+  width: 108px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   background-color: #b7241c;
 }
 .box-title-bar .check {
-  right: 380px;
+  right: 250px;
+  width: 108px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 .box-title-bar .check span {
   position: absolute;
@@ -148,7 +156,7 @@ label.checkbox.red input[type="checkbox"]:focus:checked ~ span {
 }
 label.checkbox.red input[type="checkbox"]:checked ~ span {
   color: #FFFFFF;
-  background: #c76870 url('../resource/check.png') 50% 40% no-repeat;
+  background: #c76870 url('../images/check.png') 50% 40% no-repeat;
   border: 2px solid #c76870;
   position: absolute;
   left: 0;
@@ -224,9 +232,23 @@ label.checkbox.red span {
   max-height: 56px;
   overflow: hidden;
   padding: 0 3px;
+
 }
 .card-box-left .bottom .bottom-item:last-child {
   border-right: none;
+  
+}
+.card-box-right .voted {
+	position: absolute;
+    display: block;
+    left: 10px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: calc(100% - 10px);
+    height: 20px;
+    text-align: center;
 }
 
 .min .menu-box {
@@ -329,16 +351,27 @@ input {-webkit-appearance:none; }
   text-align-last: center;
 }
 
-.title-bar marquee {
+.title-bar .marquee {
   display: none;
   text-align: center;
 }
 
-.min .title-bar marquee {
+.min .title-bar .marquee {
   display: block;
   position: absolute;
   top: 8%;
+  width: 100%;
   z-index: 9;
   color: white;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.min .title-info-box {
+	display: none;
+}
+.title-info-box p {
+  font-weight: bold;
+  font-size: 20px;
 }

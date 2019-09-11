@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'FZLTHJW';
-	src: url('../resource/FZLTHJW.TTF');
+	src: url('FZLTHJW.TTF');
 }
 
 body, html {
@@ -11,7 +11,6 @@ body, html {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  font-family: 'FZLTHJW'
 }
 body {
   background-color: #f2ebe2;
@@ -282,7 +281,7 @@ input[type="radio"]:disabled + .a11y-radio-label::before {
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   margin: 20px 0;
   box-shadow: 1px 1px 3px #6d6d6d;
   background-color: rgba(255, 255, 255, 0.1);
@@ -347,7 +346,7 @@ a {
   width: 100%;
   height: 20%;
   background-size: 100% auto;
-  background-image: url('../resource/min-decorate-bg.jpg');
+  background-image: url('../images/min-decorate-bg.jpg');
 }
 .min .right-bar, .min .content .right {
   width: 100%;

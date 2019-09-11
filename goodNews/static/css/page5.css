@@ -39,7 +39,7 @@ body {
   margin: auto;
 }
 .content .left {
-  background-image: url(../resource/decorate-bg.jpg);
+  background-image: url(../images/decorate-bg.jpg);
   min-height: 880px;
   background-size: auto 100%;
   background-repeat: no-repeat;
