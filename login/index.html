@@ -173,54 +173,7 @@
   </head>
   <body>
     <!-- 顶部标题栏 -->
-    <div class="title-bar">
-      <img class="title" src="./static/logo.png"/>
-    </div>
-    <div class="enter-box">
-      <div class="card card-1">
-        <p>人民网好新闻评选申报</p>
-        <a class="link1" href="#">
-          <img src="./static/icon.svg"/>
-          <span>进入系统</span>
-        </a>
-      </div>
-      <div class="card card-2">
-        <p>人民网好新闻奖金分配</p>
-        <a class="link1" href="#">
-          <img src="./static/icon.svg"/>
-          <span>进入系统</span>
-        </a>
-      </div>
-      
-    </div>
-    <!-- 进入后台 -->
-    <select class="backstage-button">
-      <option>进入后台1</option>
-      <option>进入后台2</option>
-    </select>
-    <script src="./static/jquery-1.12.4.min.js" type="text/javascript"></script>
-    <script>
-      function changeBGSize () {
-        var ratio = window.innerWidth / window.innerHeight
-        // console.log(ratio)
-        if (ratio > 1.6) {
-          $('body').css('background-size', '100% auto')
-        } else {
-          $('body').css('background-size', 'auto 100%')
-        }
-      }
-      changeBGSize ()
-      window.onresize = changeBGSize
+    <a href="http://cms.peopleurl.cn/cms/ChannelView.shtml?id=428796" target="_blank">sdfsdfsdfsdf</a>
 
-      var ratio = window.innerWidth / window.innerHeight
-      if (ratio < 1) {
-        document.body.classList.add('min')
-        document.body.innerHTML = '<div class="info-text">请使用电脑进行访问!</div>'
-      }
-
-      setTimeout(() => {
-        $('.enter-box')[0].style.height = $('.enter-box')[0].offsetWidth * 0.257 + 'px'
-      }, 0)
-    </script>
   </body>
 </html>

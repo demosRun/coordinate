@@ -331,6 +331,7 @@ input {-webkit-appearance:none; }
 
 .title-bar marquee {
   display: none;
+  text-align: center;
 }
 
 .min .title-bar marquee {
