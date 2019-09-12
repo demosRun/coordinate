@@ -1,0 +1,134 @@
+body {
+  background-image: url('../resource/login-bg.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  min-width: 750px;
+  min-height: 480px;
+}
+.logo {
+  position: absolute;
+  right: 4%;
+  top: 2%;
+}
+.login-box {
+  width: 629px;
+  height: 414px;
+  background-image: url('../resource/login-box.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.login-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25%;
+  bottom: 0;
+  margin: auto;
+}
+.input-bar {
+  width: 65%;
+  position: absolute;
+  height: 18%;
+  line-height: 100%;
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+  left: 5%;
+  right: 0;
+  display: block;
+  outline: none;
+  font-size: 23px;
+  color: #333;
+}
+.password {
+  top: 30%;
+}
+.username {
+  top: 2%;
+}
+.ripple {
+  width: 87%;
+  position: absolute;
+  height: 22%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 16%;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 45px;
+  display: block;
+  opacity: 0;
+  background-color: transparent;
+  border: none;
+}
+select {
+  width: 65%;
+  position: absolute;
+  height: 18%;
+  line-height: 100%;
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+  left: 5%;
+  right: 0;
+  display: block;
+  outline: none;
+  top: 2%;
+  color: #c5c5c5;
+  font-size: 23px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+option {
+  line-height: 40px;
+}
+
+.main-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 18%;
+  margin: auto;
+  width: 60%;
+}
+
+.min {
+  background-image: url(../resource/min-login-bg.jpg);
+  background-size: 100%;
+}
+
+.min .logo {
+  height: 5%;
+}
+
+.min .login-box {
+  width: 80%;
+}
+
+.min .input-bar {
+  font-size: 16px;
+}
+
+.min .main-title {
+  height: unset;
+  width: 80%;
+  top: 22%;
+}
+
+@media screen and (max-height: 600px){
+  .login-box {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+  }
+}
+
+@media screen and (max-height: 300px){
+  .main-title {
+    display: none;
+  }
+}

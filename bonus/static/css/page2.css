@@ -1,0 +1,148 @@
+body, html {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  position: relative;
+}
+.title-bar {
+  height: 8%;
+  background-color: #ba0319;
+}
+.content {
+  height: 94%;
+  overflow: hidden;
+}
+.logo-box {
+  background-color: #95001d;
+}
+.logo-box, .content .left {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: left;
+  background-position: center;
+}
+.logo, .content  .right {
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .left {
+  background-image: url(../resource/decorate-bg.jpg);
+  min-height: 880px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.box {
+  margin: 25px 10px;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+
+.right-bar, .content .right {
+  width: 85%;
+  height: 100%;
+  float: left;
+  position: relative;
+  overflow: auto;
+}
+.right-bar .title {
+  height: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.box-title-bar {
+  line-height: 50px;
+  font-size: 18px;
+  color: #a24f4f;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+.box-title-bar input {
+  border: none;
+  font-size: 14px;
+  color: white;
+  background-color: #928e8d;
+  padding: 0 25px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+.content .right {
+  padding: 2%;
+  width: 81%;
+  height: 92%;
+  background-color: #eaeaea;
+}
+
+
+.title-box span {
+  color: white;
+  line-height: 50px;
+  font-size: 16px;
+  border-radius: 6px 6px 0 0;
+  padding: 10px 15px;
+  background-color: #ba2514;
+}
+
+.card-box {
+  background-color: white;
+  border-radius: 6px;
+  margin-top: -5px;
+  padding: 20px;
+  color: #606060;
+}
+
+.card-box h2 {
+  display: flex;
+  line-height: 50px;
+}
+
+.card-box h2 span {
+  display: block;
+  width: 120px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.line {
+  height: 1px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+}
+
+.card-box h2 p {
+  display: block;
+  width: calc(100% - 140px);
+}
+
+.back {
+  display: block;
+  width: 120px;
+  height: 40px;
+  margin: 10px auto;
+  line-height: 40px;
+  border: 2px solid #eb313c;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #eb313c;
+}
