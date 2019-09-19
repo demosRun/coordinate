@@ -92,3 +92,20 @@ function submitData() {
   var editor = $('#radio1')[0].checked
   console.log(editor)
 }
+
+
+$('.add')[0].onclick = function () {
+  console.log('fp')
+  $('#fp')[0].innerHTML = $('#fp')[0].innerHTML += '<br><select id="department"><option disabled="disabled" selected>请选择部门</option><option>全媒体制作一部</option><option>全媒体制作二部</option><option>全媒体制作三部</option><option>时政部</option><option>品牌部</option><option>强国论坛部</option></select><select id="people"><option disabled="disabled" selected>请选择获奖人</option><option>全媒体制作一部</option><option>全媒体制作二部</option><option>全媒体制作三部</option><option>时政部</option><option>品牌部</option><option>强国论坛部</option></select>获奖金额:<input class="number-input" type="number">'
+}
+
+$('#department')[0].onchange = function () {
+  var html = '<option disabled="disabled" selected>请选择获奖人</option>'
+  $.post("http://10.2.121.27/news_bonus/select.php", {department: $('#department')[0].value}, function (result) {
+    var data = JSON.parse(result)
+    for (var ind = 0; ind < data.length; ind++) {
+      html += '<option>' + data[ind].author_name + '</option>'
+    }
+    $('#people')[0].innerHTML = html
+  })
+}
