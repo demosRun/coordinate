@@ -1,0 +1,206 @@
+body, html {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  position: relative;
+}
+.title-bar {
+  height: 8%;
+  background-color: #ba0319;
+}
+.content {
+  height: 94%;
+  overflow: hidden;
+}
+.logo-box {
+  background-color: #95001d;
+}
+.logo-box, .content .left {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: left;
+  background-position: center;
+}
+.logo, .content  .right {
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .left {
+  background-image: url(../resource/decorate-bg.jpg);
+  min-height: 880px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.box {
+  margin: 25px 10px;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+
+.right-bar, .content .right {
+  width: 85%;
+  height: 100%;
+  float: left;
+  position: relative;
+  overflow: auto;
+}
+.right-bar .title {
+  height: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.box-title-bar {
+  line-height: 50px;
+  font-size: 18px;
+  color: #a24f4f;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+.box-title-bar input {
+  border: none;
+  font-size: 14px;
+  color: white;
+  background-color: #928e8d;
+  padding: 0 25px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+.content .right {
+  padding: 2%;
+  width: 81%;
+  height: 92%;
+  background-color: #eaeaea;
+}
+
+
+.title-box a {
+  color: white;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 6px 6px 0 0;
+  padding: 10px 20px;
+  display: inline;
+  margin-right: -4px;
+  background-color: #c3c3c3;
+}
+
+.title-box .active {
+  background-color: #ba2514;
+}
+
+.card-box {
+  background-color: white;
+  border-radius: 6px;
+  margin-top: 0;
+  padding: 20px;
+  margin-top: -3px;
+  color: #606060;
+  height: calc(100% - 150px);
+  overflow: hidden;
+}
+
+.bottom-bar {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.ok {
+  width: 124px;
+  height: 44px;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 30px;
+  background-color: #eb313c;
+}
+
+.switch-box {
+  border: 2px solid #ba2514;
+  line-height: 40px;
+  border-radius: 20px;
+  width: 280px;
+  overflow: hidden;
+}
+.switch-box a {
+  display: inline-block;
+  width: 138px;
+  text-align: center;
+  color: #ba2514;
+  font-size: 16px;
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+.switch-box .active {
+  background-color: #ba2514;
+  color: white;
+}
+.add {
+  color: #606060;
+  font-size: 16px;
+  line-height: 40px;
+  margin: 0 20px;
+  text-align: left;
+  cursor: pointer;
+}
+.add:hover {
+  color: #bb0316;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #e4e4e4;
+}
+
+table th {
+  background-color: #d2d2d2;
+  font-size: 20px;
+  line-height: 40px;
+  height: 40px;
+}
+
+table td {
+  font-size: 16px;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px dotted #efefef;
+}
+
+table .title {
+  color: #616161;
+  background-color: #efefef;
+  padding: 0 10px;
+  text-align: left;
+  font-size: 20px;
+}
+
+tbody, tr, th {
+  border: none;
+  text-align: center;
+}
+
+.table-box {
+  height: calc(100% - 55px);
+  overflow: auto;
+  margin: 15px 0;
+}

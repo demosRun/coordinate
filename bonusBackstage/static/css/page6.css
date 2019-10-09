@@ -1,0 +1,156 @@
+body, html {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  position: relative;
+}
+.title-bar {
+  height: 8%;
+  background-color: #ba0319;
+}
+.content {
+  height: 94%;
+  overflow: hidden;
+}
+.logo-box {
+  background-color: #95001d;
+}
+.logo-box, .content .left {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: left;
+  background-position: center;
+}
+.logo, .content  .right {
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .left {
+  background-image: url(../resource/decorate-bg.jpg);
+  min-height: 880px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.box {
+  margin: 25px 10px;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+.right .back {
+  border: none;
+  font-size: 14px;
+  color: white;
+  background-color: #928e8d;
+  padding: 0 25px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  cursor: pointer;
+}
+.right-bar, .content .right {
+  width: 85%;
+  height: 100%;
+  float: left;
+  position: relative;
+  overflow: auto;
+}
+.right-bar .title {
+  height: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.box-title-bar {
+  line-height: 50px;
+  font-size: 18px;
+  color: #a24f4f;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+.box-title-bar input {
+  border: none;
+  font-size: 14px;
+  color: white;
+  background-color: #928e8d;
+  padding: 0 25px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+.content .right {
+  background-color: #eaeaea;
+}
+.card-box {
+  height: calc(100% - 50px);
+  overflow: auto;
+}
+.card {
+  background-color: #d2d2d2;
+  margin: 0 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.card .title {
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: #606060;
+}
+.card ul {
+  background-color: white;
+  border-radius: 6px;
+}
+
+.card ul li {
+  line-height: 46px;
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+  margin: 0 20px;
+}
+
+.card ul li span {
+  display: block;
+  font-size: 16px;
+  color: #606060;
+  width: calc(100% - 150px);
+}
+
+.card ul li .tool {
+  width: 170px;
+  box-sizing: border-box;
+  border-left: 1px solid #ccc;
+  height: 34px;
+  line-height: 34px;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.card ul li:last-child { 
+  border: none;
+}
+
+.card ul li p {
+  color: #bebebe;
+  font-size: 18px;
+  line-height: 46px;
+}
