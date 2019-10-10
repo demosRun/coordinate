@@ -115,8 +115,9 @@ body {
   padding: 20px;
   margin-top: -3px;
   color: #606060;
-  height: calc(100% - 150px);
+  height: calc(100% - 87px);
   overflow: hidden;
+  position: relative;
 }
 
 .bottom-bar {
@@ -143,7 +144,7 @@ body {
 }
 .switch-box a {
   display: inline-block;
-  width: 138px;
+  width: 140px;
   text-align: center;
   color: #ba2514;
   font-size: 16px;
@@ -167,9 +168,12 @@ body {
   color: #bb0316;
 }
 
+.table-box {
+  
+}
 table {
   width: 100%;
-  border: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
 }
 
 table th {
@@ -184,6 +188,7 @@ table td {
   line-height: 40px;
   height: 40px;
   border-bottom: 1px dotted #efefef;
+  border-left: 1px dotted #efefef;
 }
 
 table .title {
@@ -203,4 +208,55 @@ tbody, tr, th {
   height: calc(100% - 55px);
   overflow: auto;
   margin: 15px 0;
+}
+
+.search-bar {
+  margin: 15px 0;
+}
+
+.search-bar select {
+  height: 40px;
+  width: 190px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  border: 1px solid #d0d0d0;
+  margin-right: 30px;
+  padding: 0 10px;
+}
+
+.search-bar .search-button {
+  display: inline-block;
+  height: 40px;
+  width: 140px;
+  border-radius: 8px;
+  background-color: #ba2514;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.user-bar {
+  position: absolute;
+  right: 20px;
+  top: 19px;
+}
+
+.user-bar .user-info {
+  float: left;
+  line-height: 40px;
+  margin-right: 20px;
+  color: #606060;
+  font-size: 14px;
+}
+
+.user-bar .button {
+  width: 120px;
+  height: 40px;
+  background-color: #928e8d;
+  line-height: 40px;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  float: left;
+  margin-right: 20px;
 }

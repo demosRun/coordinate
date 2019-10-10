@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <title>奖金分配页</title>
+    <title>分配详情页</title>
     <meta http-equiv="Content-Language" content="zh-CN" />
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
@@ -29,7 +29,12 @@
     <meta name="browsermode" content="application">
     <meta name="x5-page-mode" content="app">
     <link rel="stylesheet" href="./static/css/common.css">
-    <link rel="stylesheet" href="./static/css/page6.css">
+    <link rel="stylesheet" href="./static/css/page2.css">
+    <style>
+      .table-box {
+        height: calc(100% - 112px);
+      }
+    </style>
   </head>
   <body>
     <!-- 顶部标题栏 -->
@@ -47,55 +52,69 @@
       <div class="left">
         <!-- 单位 -->
         <div class="group">
-          <!-- 单位标题 -->
-          <span class="group-title">推荐单位</span>
-          <!-- 单位名称 -->
-          <p class="group-name">全媒体制作二部</p>
+          <div class="title-info-box">
+            <p>2019年7-8月好新闻奖金分配</p>
+          </div>
         </div>
       </div>
       <div class="right">
-        <div class="box-title-bar">
-          <span>2019年7-8月好新闻奖金分配</span>
-          <input class="exit" type="button" value="退出">
+        <div class="title-box">
+          <a href="#">分配结果</a>
+          <a class="active" href="#">结果表格</a>
+        </div>
+        <!-- 用户信息条 -->
+        <div class="user-bar clear">
+          <div class="user-info">用户: 李洁</div>
+          <a class="button" href="#">返回</a>
+          <a class="button" href="#">退出</a>
         </div>
         <div class="card-box">
-          <div class="card">
-            <div class="title">总编辑奖</div>
-            <ul>
-              <li>
-                <span>康美药业财务ttttv造假系列报道</span>
-                <div class="tool">
-                  <a href="#">查看</a>
-                </div>
-              </li>
-              <li>
-                <span>康美药业财务ttttv造假系列报道</span>
-                <div class="tool">
-                  <a href="#">添加获奖人</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <div class="title">总网一等奖</div>
-            <ul>
-              <li>
-                <span>康美药业财务ttttv造假系列报道</span>
-                <div class="tool">
-                  <a href="#">添加获奖人</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <div class="title">总网一等奖</div>
-            <ul>
-              <li>
-                <p>暂未有获奖名单</p>
-              </li>
-            </ul>
+          <!-- 表格 -->
+          <div class="table-box">
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <th>部门</th>
+                <th>人员</th>
+                <th>金额 / 元</th>
+                <th>总计 / 元</th>
+              </tr>
+              <tr>
+                <td rowspan="2">全媒体制作二部</td>
+                <td>李连杰</td>
+                <td>100</td>
+                <td rowspan="2">300</td>
+              </tr>
+              <tr>
+                <td>李连杰</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td rowspan="6">中国共产党新闻网</td>
+                <td>李连杰</td>
+                <td>100</td>
+                <td rowspan="6">600</td>
+              </tr>
+              <tr>
+                <td>李连杰</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>李连杰</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>李连杰</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>李连杰</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>李连杰</td>
+                <td>100</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
