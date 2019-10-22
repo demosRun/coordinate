@@ -1,0 +1,197 @@
+@font-face {
+	font-family: 'FZLTHJW';
+	src: url('FZLTHJW.TTF');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font: normal 12px/180% "Microsoft YaHei";
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background-color: #f2ebe2;
+}
+h1, h2, h3, h4, h5, input {
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+ul, li {
+  list-style-type: none;
+}
+.pc .ox {
+  display: block !important;
+}
+a {
+  color: unset;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  color: #e60012;
+}
+
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td {
+  margin:0;
+  padding:0;
+}
+
+:-moz-placeholder {
+  color: #d08282;
+}
+::-moz-placeholder {
+  color: #d08282;
+}
+input:-ms-input-placeholder {
+  color: #d08282;
+}
+input::-webkit-input-placeholder {
+  color: #d08282;
+}
+
+input{
+  border: 0;
+  outline: none;
+}
+a {
+  text-align: center;
+}
+/* 水波纹 */
+.ripple-effect {
+  background-color: rgba(204, 12, 23, .8);
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  animation-name: ripple;
+  animation-iteration-count: 1;
+  animation-duration: 1.2s;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  to {
+    width: 800px;
+    height: 800px;
+    opacity: 0;
+  }
+}
+.content {
+  height: 92%;
+  width: 100%;
+  position: relative;
+}
+textarea{ resize:none;}
+/* 滚动条 */
+::-webkit-scrollbar {  
+  width: 5px;    
+  background-color: #fff;  
+}  
+
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}  
+
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb {  
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #9d9d9d;
+}
+
+input::-webkit-input-placeholder {
+  color: #c5c5c5;
+}
+input::-moz-placeholder {
+  color: #c5c5c5;
+}
+input:-moz-placeholder {
+  color: #c5c5c5;
+}
+input:-ms-input-placeholder {
+  color: #c5c5c5;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #c5c5c5;
+}
+textarea::-moz-placeholder {
+  color: #c5c5c5;
+}
+textarea:-moz-placeholder {
+  color: #c5c5c5;
+}
+textarea:-ms-input-placeholder {
+  color: #c5c5c5;
+}
+
+.main-title {
+  height: 8%;
+  background-image: url('../resource/title.png');
+  background-color: #ba2517;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 50%;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.title-bar {
+  font-size: 22px;
+  color: #a24f4f;
+  line-height: 60px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.fixed-button {
+  background-color: #928e8d;
+  font-size: 16px;
+  width: 120px;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+}
+
+.card-box {
+  margin: 10px 20px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.card {
+  background-color: white;
+  line-height: 40px;
+  padding: 0 10px;
+  color: #606060;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+}
