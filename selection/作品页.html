@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>人民好新闻申报页</title>
+    <meta http-equiv="Content-Language" content="zh-CN" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="robots" content="all" />
+    <meta name="keywords" content="{TAG_59446_TAG}" />
+    <meta name="description" content="{TAG_59447_TAG}" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <meta name="catalogs" content="w_0" />
+    <meta name="partner" content="">
+    <meta name="pageversion" content="3">
+    <meta name="applicable-device" content="mobile">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <link rel="stylesheet" href="./static/css/page5.css">
+  </head>
+  <body>
+    <!-- 顶部标题栏 -->
+    <div class="title-bar clear">
+      <div class="right-bar">
+        <img class="title" src="./static/resource/title.png"/>
+      </div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="content clear">
+      <div class="right">
+        <div class="box clear">
+          <!-- 卡片 -->
+          <div class="card">
+            <div class="container">
+              <h2 class="title">作品信息</h2>
+              <div class="line"></div>
+              <!-- 第一个输入条 -->
+              <div class="input-bar clear">
+                <span class="separate">·</span>
+                <input class="long" id="zpmc" type="text" placeholder="请输入作品名称"/>
+                <span class="separate"></span>
+                <select id="tjjx" class="short">
+                  <option value="" disabled selected>推荐奖项类型</option>
+                  <option value="a">奖项1</option>
+                  <option value="b">奖项2</option>
+                  <option value="c">奖项3</option>
+                  <option value="d">奖项4</option>
+                </select>
+              </div>
+              <!-- 第二个输入条 -->
+              <div class="input-bar clear">
+                <span class="separate">·</span>
+                <input class="medium" id="bm" type="text" placeholder="部门"/>
+                <span class="separate">·</span>
+                <input class="short" id="fbsj" type="text" placeholder="发布时间"/>
+                <span class="separate"></span>
+                <select class="short" id="ycxwlx">
+                  <option value="" disabled selected>原创新闻类型</option>
+                  <option value="a">选项1</option>
+                  <option value="b">选项2</option>
+                  <option value="c">选项3</option>
+                  <option value="d">选项4</option>
+                </select>
+              </div>
+              <!-- 第三个输入条 -->
+              <div class="input-bar clear">
+                <span class="separate">·</span>
+                <input class="medium" id="zz" type="text" placeholder="作者"/>
+                <span class="separate">·</span>
+                <input class="short" id="tbr" type="text" placeholder="填报人"/>
+                <span class="separate">·</span>
+                <input class="short" id="tbdh" type="text" placeholder="填报电话"/>
+              </div>
+            </div>
+          </div>
+          <!-- 迷你卡片1 -->
+          <div class="min clear">
+            <div class="card edit">
+              <div class="container">
+                <span class="separate">·</span>
+                <h2 class="red">是否推荐总编辑奖:</h2>
+                <span class="radio-box">
+                  <input type="radio" name="radiobuttons" id="radio1" class="a11y-radio" />
+                  <label for="radio1" class="a11y-radio-label">是</label>
+                  
+                  <input type="radio" name="radiobuttons" id="radio2" checked="checked" class="a11y-radio" />
+                  <label for="radio2" class="a11y-radio-label">否</label>
+                </span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="container">
+                <h2 class="title">作品数据</h2>
+                <div class="input-bar clear">
+                  <span class="separate">·</span>
+                  <input class="normal" id="fwl" type="text" placeholder="访问量"/>
+                  <span class="info">限15个字</span>
+                </div>
+                <div class="input-bar clear">
+                  <span class="separate">·</span>
+                  <input class="normal" id="zzl" type="text" placeholder="转载量"/>
+                  <span class="info">限15个字</span>
+                </div>
+                <div class="input-bar clear">
+                  <span class="separate">·</span>
+                  <textarea class="mini" id="ljdz" placeholder="链接地址"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 迷你卡片2 -->
+          <div class="min clear">
+            <div class="card">
+              <div class="container">
+                <h2 class="title">作品简介</h2>
+                <div class="line"></div>
+                <div class="input-bar clear">
+                  <span class="separate">·</span>
+                  <textarea id="zpjj" ></textarea>
+                  <span class="info">限300字内</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 迷你卡片3 -->
+          <div class="min clear">
+            <div class="card">
+              <div class="container">
+                <h2 class="title">推荐理由</h2>
+                <div class="line"></div>
+                <div class="input-bar clear">
+                  <span class="separate">·</span>
+                  <textarea id="tjly"></textarea>
+                  <span class="info">限300字内</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 迷你卡片4 -->
+          <div class="min clear">
+            <div class="card">
+              <div class="container">
+                <h2 class="title">访问量截图上传</h2>
+                <div class="line"></div>
+                <!-- 图片上传框 -->
+                <div class="img-box">
+                  <span class="separate">·</span>
+                  <!-- 上传新图片 -->
+                  <div class="new-image">
+                    <input type="file" class="file-upload" id="fileinp" >
+                    <img id="previewImg1" alt="Image preview...">
+                    <a class="delete delete-1">✕</a>
+                  </div>
+                  <div class="new-image">
+                    <input type="file" class="file-upload" id="fileinp2">
+                    <img id="previewImg2" alt="Image preview...">
+                    <a class="delete delete-1">✕</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 底部提交和返回按钮 -->
+        <div class="bottom-button-box">
+          <input type="button" value="通过">
+          <input type="button" value="不通过">
+          <span>|</span>
+          <input class="gray" type="button" value="确定">
+          <input class="gray" type="button" onclick="window.close()" value="关闭">
+        </div>
+      </div>
+    </div>
+    <script src="./static/js/jquery-1.12.4.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="./static/js/page5.js" type="text/javascript" charset="UTF-8"></script>
+  </body>
+</html>

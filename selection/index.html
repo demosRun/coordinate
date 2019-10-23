@@ -33,44 +33,146 @@
     <link rel="stylesheet" href="./static/css/page1.css">
   </head>
   <body>
-    <div class="main-title"></div>
+    <div class="main-title"><img src="./static/resource/title.png"/></div>
     <div class="title-bar">
       <span>2019年7-8月好新闻评选-评选结果</span>
       <a href="#" class="fixed-button" style="right: 390px;">预览地址</a>
-      <a href="#" class="fixed-button" style="right: 260px;">权限管理</a>
-      <a href="#" class="fixed-button" style="right: 130px;">平票后台</a>
+      <a href="权限管理.html" class="fixed-button" style="right: 260px;">权限管理</a>
+      <a href="./平票后台.html" class="fixed-button" style="right: 130px;">平票后台</a>
       <a href="#" class="fixed-button" style="right: 0;">退出</a>
     </div>
-    <div class="card-box">
-      <div class="card">一二等奖投票<span style="color: red;">已参与23人</span>： 杨斌、脸如玉、易建联、陈一刻、冰心、寒冰、赵云龙、凳子阿、皇甫英楠、潘虹、没大炕、爱彼、潘彼得堡、皇甫英楠、潘虹、没大炕、爱彼、潘彼得堡</div>
-      <div class="card">平票正在进行：人民日报平票第1轮；人民网平票第1轮</div>  
-    </div>
-    <div class="title-box">
+    <div class="table-box">
       <table class="selection-table" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <th>序号</th>
-          <th width="240">作品标题</th>
-          <th>票数</th>
-          <th>排名</th>
-          <th>全选</th>
-          <th></th>
-          <th>人民网一等</th>
-          <th>人民网二等</th>
-          <th>人民网平票票数</th>
-          <th>人民日报一等</th>
-          <th>人民日报二等</th>
-          <th>人民日报三等</th>
-          <th>人民日报平票票数</th>
+          <th width="50">序号</th>
+          <th>申报单位</th>
+          <th width="180">作品类型</th>
+          <th width="280">作品标题</th>
+          <th>部门</th>
+          <th>是否推荐总编辑奖</th>
+          <th width="50">状态</th>
+          <th width="50">票数</th>
+          <th width="70"><input type="checkbox" id="checkAllBox" oninput="checkAll()" name="checkAll" value="">全选</th>
         </tr>
         <tr>
           <td>1</td>
-          <td style="padding: 0 10px;">官位正能量创意互动话题#夏天该有的样子#再次出力创意互动H5再次第五套人民币发售，闲暇出新品哈...</td>
-          <td>65</td>
-          <td>65</td>
+          <td style="padding: 0 10px;">美国公司国内支持部</td>
+          <td>深度（单篇、组合或系列）报道类型</td>
+          <td>官位正能量创意互动话题#夏天该有的样子#再次出力创意互动H5</td>
+          <td>中国共产党新闻网、全媒体制作二部、全媒体制作三部</td>
+          <td>是</td>
+          <td class="select-td">√</td>
+          <td class="select-td">65</td>
+          <td class="select-td"><input type="checkbox" class="check-item" name="checkItem" value=""></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td style="padding: 0 10px;">美国公司国内支持部</td>
+          <td>深度（单篇、组合或系列）报道类型</td>
+          <td>官位正能量创意互动话题#夏天该有的样子#再次出力创意互动H5</td>
+          <td>中国共产党新闻网、全媒体制作二部、全媒体制作三部</td>
+          <td>是</td>
+          <td class="select-td">√</td>
+          <td class="select-td">65</td>
+          <td class="select-td"><input type="checkbox" class="check-item" name="checkItem" value=""></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td style="padding: 0 10px;">美国公司国内支持部</td>
+          <td>深度（单篇、组合或系列）报道类型</td>
+          <td>官位正能量创意互动话题#夏天该有的样子#再次出力创意互动H5</td>
+          <td>中国共产党新闻网、全媒体制作二部、全媒体制作三部</td>
+          <td>是</td>
+          <td class="select-td">√</td>
+          <td class="select-td">65</td>
+          <td class="select-td"><input type="checkbox" class="check-item" name="checkItem" value=""></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td style="padding: 0 10px;">美国公司国内支持部</td>
+          <td>深度（单篇、组合或系列）报道类型</td>
+          <td>官位正能量创意互动话题#夏天该有的样子#再次出力创意互动H5</td>
+          <td>中国共产党新闻网、全媒体制作二部、全媒体制作三部</td>
+          <td>是</td>
+          <td class="select-td">√</td>
+          <td class="select-td">65</td>
+          <td class="select-td"><input type="checkbox" class="check-item" name="checkItem" value=""></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td style="padding: 0 10px;">美国公司国内支持部</td>
+          <td>深度（单篇、组合或系列）报道类型</td>
+          <td>官位正能量创意互动话题#夏天该有的样子#再次出力创意互动H5</td>
+          <td>中国共产党新闻网、全媒体制作二部、全媒体制作三部</td>
+          <td>是</td>
+          <td class="select-td">√</td>
+          <td class="select-td">65</td>
+          <td class="select-td"><input type="checkbox" class="check-item" name="checkItem" value=""></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td style="padding: 0 10px;">美国公司国内支持部</td>
+          <td>深度（单篇、组合或系列）报道类型</td>
+          <td>官位正能量创意互动话题#夏天该有的样子#再次出力创意互动H5</td>
+          <td>中国共产党新闻网、全媒体制作二部、全媒体制作三部</td>
+          <td>是</td>
+          <td class="select-td">√</td>
+          <td class="select-td">65</td>
+          <td class="select-td"><input type="checkbox" class="check-item" name="checkItem" value=""></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td style="padding: 0 10px;">美国公司国内支持部</td>
+          <td>深度（单篇、组合或系列）报道类型</td>
+          <td>官位正能量创意互动话题#夏天该有的样子#再次出力创意互动H5</td>
+          <td>中国共产党新闻网、全媒体制作二部、全媒体制作三部</td>
+          <td>是</td>
+          <td class="select-td">√</td>
+          <td class="select-td">65</td>
+          <td class="select-td"><input type="checkbox" class="check-item" name="checkItem" value=""></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td style="padding: 0 10px;">美国公司国内支持部</td>
+          <td>深度（单篇、组合或系列）报道类型</td>
+          <td>官位正能量创意互动话题#夏天该有的样子#再次出力创意互动H5</td>
+          <td>中国共产党新闻网、全媒体制作二部、全媒体制作三部</td>
+          <td>是</td>
+          <td class="select-td">√</td>
+          <td class="select-td">65</td>
+          <td class="select-td"><input type="checkbox" class="check-item" name="checkItem" value=""></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td style="padding: 0 10px;">美国公司国内支持部</td>
+          <td>深度（单篇、组合或系列）报道类型</td>
+          <td>官位正能量创意互动话题#夏天该有的样子#再次出力创意互动H5</td>
+          <td>中国共产党新闻网、全媒体制作二部、全媒体制作三部</td>
+          <td>是</td>
+          <td class="select-td">√</td>
+          <td class="select-td">65</td>
+          <td class="select-td"><input type="checkbox" class="check-item" name="checkItem" value=""></td>
         </tr>
       </table>
     </div>
-    
+    <div class="bottom-button-box">
+      <input type="button" value="通过">
+      <input type="button" value="不通过">
+      <input type="button" value="生成序号">
+      <input type="button" value="删除">
+      <span>|</span>
+      <label class="switch tianbao-switch" for="tianbao">
+        <input type="checkbox" oninput="changeTianBao()" id="tianbao" />
+        <div class="slider round"></div>
+        <!-- 说明文字 -->
+        <div class="text">填报关闭</div>
+      </label>
+      <label class="switch toupiao-switch" for="toupiao">
+        <div class="text">投票关闭</div>
+        <input type="checkbox" oninput="changeTouPiao()" id="toupiao" />
+        <div class="slider round"></div>
+      </label>
+    </div>
     <script src="./static/js/jquery-1.12.4.min.js" type="text/javascript" charset="UTF-8"></script>
     <script src="./static/js/page1.js" type="text/javascript" charset="UTF-8"></script>
   </body>

@@ -1,0 +1,731 @@
+@font-face {
+	font-family: 'FZLTHJW';
+	src: url('FZLTHJW.TTF');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font: normal 12px/180% "Microsoft YaHei";
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background-color: #f2ebe2;
+}
+h1, h2, h3, h4, h5, input {
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+ul, li {
+  list-style-type: none;
+}
+.pc .ox {
+  display: block !important;
+}
+a {
+  color: unset;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  color: #e60012;
+}
+
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td {
+  margin:0;
+  padding:0;
+}
+
+:-moz-placeholder {
+  color: #d08282;
+}
+::-moz-placeholder {
+  color: #d08282;
+}
+input:-ms-input-placeholder {
+  color: #d08282;
+}
+input::-webkit-input-placeholder {
+  color: #d08282;
+}
+
+input{
+  border: 0;
+  outline: none;
+}
+a {
+  text-align: center;
+}
+/* 水波纹 */
+.ripple-effect {
+  background-color: rgba(204, 12, 23, .8);
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  animation-name: ripple;
+  animation-iteration-count: 1;
+  animation-duration: 1.2s;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  to {
+    width: 800px;
+    height: 800px;
+    opacity: 0;
+  }
+}
+.content {
+  height: 92%;
+  width: 100%;
+  position: relative;
+}
+textarea{ resize:none;}
+/* 滚动条 */
+::-webkit-scrollbar {  
+  width: 5px;    
+  background-color: #fff;  
+}  
+
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}  
+
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb {  
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #9d9d9d;
+}
+
+input::-webkit-input-placeholder {
+  color: #c5c5c5;
+}
+input::-moz-placeholder {
+  color: #c5c5c5;
+}
+input:-moz-placeholder {
+  color: #c5c5c5;
+}
+input:-ms-input-placeholder {
+  color: #c5c5c5;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #c5c5c5;
+}
+textarea::-moz-placeholder {
+  color: #c5c5c5;
+}
+textarea:-moz-placeholder {
+  color: #c5c5c5;
+}
+textarea:-ms-input-placeholder {
+  color: #c5c5c5;
+}
+
+.title-info-box {
+  color: white;
+  margin: 20px 20px;
+  font-size: 14px;
+}
+.group {
+  margin: 0 20px;
+}
+.group-title {
+  color: white;
+  background-color: #bb0316;
+  padding: 0 10px;
+  line-height: 30px;
+  height: 30px;
+  margin: 10px 0;
+  display: inline-block;
+  border-radius: 5px;
+}
+.box-content {
+  margin-top: 10px;
+  min-height: 100px;
+}
+.group-name {
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  border-bottom: 1px solid white;
+}
+
+
+/* 
+Based on Bootstrap's .sr-only class. 
+General accessible hide class that also avoids potential weird scrolling 
+some text-indent methods have if the element is focusable. 
+If you are already using Bootstrap, you may use the .sr-only class
+on the checkbox and radio input elements instead if you prefer. 
+*/
+.a11y-checkbox, 
+.a11y-radio {
+  position: absolute;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0px, 0px, 0px, 0px);
+}
+
+/* 
+Gather the magic. 
+<label> must be relative (psuedo elements will be position absolute)
+& inline-block or block (e.g. not inline. so padding is applied consistantly across various browsers)
+*/
+.a11y-checkbox-label, 
+.a11y-radio-label {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 30px;
+}
+
+/*
+Cast the magic.
+Create the box where our custom images will live.
+*/
+input[type="checkbox"] + .a11y-checkbox-label:before,
+input[type="radio"] + .a11y-radio-label:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  overflow: hidden;
+  margin: auto;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Radio Button - Default State */
+input[type="radio"] + .a11y-radio-label:before {
+  content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABQ0lEQVR42u1WSwqDMBDtoQVd6E7xs3LjEVzoKRT1DH5wr95A8TPlZRVoNWlKC4UOBOL83mQyM/FGX6LbH+ijQF3XUZqm5DgOaZrGFvbgQfY20DRNFEUReZ5HWZbROI60ritb2IMHGXSgqwTU9z1ZlkVVVdG+76cOICuKgkzTZDYvASE6gLRtK30H0IXN2ckegI7joDAMWZSvEmxgCx9CIETm+/5luq7SCNtnmXgASpKE8jxXLmPYwocQyLZtVlGqhDuCDyEQegTlq0rbtjEfQiDDMJiyKs3zLAfkuq6w+a5oGAa51MVx/HYxwIcQqK5rCoJAubxh2zTNZxu2LEv5huVHkOxk5kfQWWtIDdVnEfIZUB6q/MmQCjwFuGR8o/SXZWHVBR5k0FF+JviIcbkYKyhb9Iiu66wNwIPs6sT/n5PfAboDjREsqed+e4MAAAAASUVORK5CYII=);
+}
+
+/* Radio Button - Selected State */
+input[type="radio"]:checked + .a11y-radio-label::before {
+  content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABI0lEQVR42mP4TyfAMGoRTS06evvd/8o1N//bd5z4r1J+EIxBbJDYkVvvKLfozsuv/8Onn/8vX7IfLwapAakly6ITd9//16o+RNASGAapBekhySKQ63RqDhNtCQyD9ODyGYZF//79/x8w+SzJlsAwSC/IDIIWHQZGLrmWwPBhLAkEw6KK1TcotghkBkGL7NpP4DQgbvbF/y8//gRjEBuXOpAZBC0C5RFcBoAsgAEQG5c6kBkELcKXpJEtevWJQoscO0/iNCBhziWwBc8+/ACzcamzJSboCpdfozgxgMwgaNHBG28ptujQzbeDKMNSWgTdJrYIomuhiuwzYoIRpIbsagI5zkCRCypWQMlWufzAf82qQ/+duk6CxUBy2OJktM0w9CwCADnp82FkjM15AAAAAElFTkSuQmCC);
+}
+
+/* Radio Button - Default Focused State */
+input[type="radio"]:focus + .a11y-radio-label::before {
+  content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAACxUlEQVR42r2WW2sTURDH96so+qCIlzfBVxUU9Nt4QW0qCr4oYn1W8PZspb5V0LSbpuAFKhZi01jFxDQXm9rdjSbZ3Yznd7IRs91s01U6cJbDmfn/Z86cmXPWkBjpdkV89XH9rnQ8X9quL61gMGcNnacGtnFiRC32ySFrtj2xfrmy5nSkbrWlutEbzFlDhw22YPwhHo3wDrwgesDrzY6s/mjJ5/pP+bjqyIeSJQtfe4M5a+iwwRYM2KgdGmEnRGarKGsq4hVF8r5oydxyQ6YX6/J8oSqT7yp6MGcNHTbYggELR9jZH0d9J6SirCLMlR3JFtY14dVneTk78VYOpTKy+3xaD+asocMGWzBgrb+cDTgir2zZDpwslmx5lVuTuy++yLEb83L85mu5N1OU5WpTEzCYs4YOG2zBgIUDLjj7Z6YdcYjkl0POlW15mfsu16YKcuCKKY+z3wYiCwu6B5mS7LtkagxYOOCC0w2wBg6JkMNcqTV1zolu/2VTzHxDRpXZpYbGgIUDLjjhxofhBbuhcjjUKZXvo9ezOsrtysO5ksbCAReccOPDYGscHmVKJOOTeTmh8h6Xrrg0goUDLjjhxofBgdF49ATlekZV0v3ZoiQVsHDABSfc+DDIIV1OA1KmB8dMXVFJpaCwcMAFJ9z4MLi3qBC6nUakR1AkFaKHAy44KxstfTducrT34ow2TipOy4t2FE7d4fGM3n5SWao4A6mr9VMXLobTt9/8czGcUhybiiFc3qmneTl5K3l5gx2LKu9hDUvzbVcexTVs1BU0EVxBmQRX0J3pIVfQVpfqE3Wp+jHvNLqRLtVhzwQAdkYqeAo45E8qStfrBUV1sYYOG2zBxD4T0Q+frVNAvlPqcLlWKNtd59Ky50Jajqg2YA0dNtiCiX34op5ytk6eR37KlS2YLZ/yHfs52dHfragfSKL7Hz+QvwFay95sEEon3AAAAABJRU5ErkJggg==);
+}
+
+/* Radio Button - Selected Focused State */
+input[type="radio"]:checked:focus  + .a11y-radio-label::before {
+  content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAACdklEQVR42r2W3UobQRTH502K0nqp9q7QJ1DQRxAforbemIiFXpbaW30GFb1TqClae6FC0gopKlpaiZr4UXcTzcduTue37ohddzdJIwmcMMz8P2bOnJlZJTG/el3E1X81ty5Vx5VKzZWyH7TpY8zRATbup8I6jThipYoj1k1NzotVKVgVOb26Ddr0MQYGLBw3wlEFV+D4s4d8WarK8Z+yHBau5cdxUb4fWZL+dRu06WMMDFg4cMNWqIImzMzWs8zrGR9okcxvS77sXcjyTkGW0qcyv33iBW36GAMDFg5cNIJmd0bGhFTk9AyzuaJs7F96gpMLuzI8vSV9iXXpfp3ygjZ9jIEBCweudc/sHyPyypJt32TnyJbV7Ll8XPkpL999lSevVmMDDFg4cNFAC02zZ54Rm0h+2eRszpZP2TOZWtyXZ+OfG5qYAAsHLhpooVnzV6UwZJls5kG+5OWc2fW0YGICDlw00EITbTyU46+GymFTF3W+X7zdaNnEBFw00EITbTwUS2PzKFNmkpzf/W8TE2ighSbaeCg2jIPHmaBch3QltWuEBlpooo2HIoeccg4gZdo7sRYpMDKTubsZaEfh0EALTbTxUNxbEDntHETOSJQAOPOjHYVDAy00T67K3t34wCiupO8bcQu0ZBRMXX9yPVJgdPabZ8CBpN1M6vImdcFiGHy/2XYxDGiNB8UQLO/EXPvlPRFW3h07sGFX0HQbV9CH5YgrqGOXatQzAYGVNZNGMGDhxD4T4Q+f7aWAfCf05nKtULZdYyl5+iYlz/UxoI8xMGDhxD58YU85SyfPTT/lGgun4VPesY+Tjn5uhX1AMrvH+ID8C1mcpWxuv0aqAAAAAElFTkSuQmCC);
+}
+
+/* Radio Button - Disabled State */
+input[type="radio"]:disabled + .a11y-radio-label {
+  color:#666;
+}
+input[type="radio"]:disabled + .a11y-radio-label::before {
+  content:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABSElEQVR42u2WWYqEMBCG+/5HEVdERXF5EBWXE3gBlze9QA1/IEOQdCex6YGBbigQU399lViV6gf90e/xBX0UtG0bTdNEcRyTbdvM8Ix3WHsbdJ4nVVVFvu9TURTUdR2N48gMz3iHNfjA9xZo33fyPI/KsmSZvzL4wBcaIxCycxyHwjBUQrjVdc1292xnUhCOJM9zCoKAkiTRhmFn0GqB1nVlmUE4DIMxDFrEUILgjKy40BTGtUoQyhYVJYpNYNAihhKEHkH5XgPowqBFDCXIdV0pSISJRyvz0QIh4+vRidY0DQuEJpWtt21LURSpQX3fv8xYBYMWMZSgZVl+y/sOTLu8ecPqXD1XmFHD8isImeFa0YWlaco0x3F87lLNsowsy6J5nu+PCT4KrmMC1SWuqeaS1uDDx0XmKFscE3qNN67sw3//M/xP0A85wNINWnbF9wAAAABJRU5ErkJggg==);
+}
+
+/* 投票页左侧菜单 */
+.menu-box {
+  margin: 10px;
+}
+
+.menu-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
+}
+
+.menu-box a:hover {
+  color: unset;
+}
+
+.menu-box .menu {
+  color: white;
+  line-height: 35px;
+  padding: 0 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 20px 0;
+  box-shadow: 1px 1px 3px #6d6d6d;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-box .menu:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-box .active {
+  background-color: #b7241c;
+}
+
+.menu-box .active:hover {
+  background-color: #b7241c;
+}
+
+.content .box .bottom-bar {
+  width: 100%;
+  height: 150px;
+  float: left;
+}
+
+.img-box .new-image {
+  width: 43%;
+}
+
+.info-text {
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 40px;
+  color: #afabab;
+  font-size: 28px;
+}
+
+a {
+  color: #606060;
+}
+.menu-box a {
+  color: white;
+}
+
+.min, .min-box {
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.min .content .left {
+  float: unset;
+  width: 100%;
+  height: 20%;
+  background-size: 100% auto;
+  background-image: url('../images/min-decorate-bg.jpg');
+}
+.min .right-bar, .min .content .right {
+  width: 100%;
+}
+
+.min .right-bar .title {
+  height: 40%;
+}
+
+.min .table-title {
+  padding-right: 16%;
+  padding-left: 5%;
+}
+
+
+.menu-box .menu select {
+  width: 100%;
+  height: 35px;
+  font-size: 12px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.menu-box .menu option {
+  color: black;
+}
+
+body, html {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 750px;
+  min-height: 480px;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+body {
+  position: relative;
+}
+.title-bar {
+  height: 8%;
+  background-color: #ba0319;
+}
+.content {
+  height: 94%;
+  overflow: hidden;
+}
+.logo, .content  .right {
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content .left {
+  background-image: url(../images/decorate-bg.jpg);
+  min-height: 880px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.box {
+  margin: 0 10px;
+  padding: 10px;
+}
+.right .back {
+  border: none;
+  font-size: 14px;
+  color: white;
+  background-color: #928e8d;
+  padding: 0 25px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  cursor: pointer;
+}
+.right-bar, .content .right {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+.right-bar .title {
+  height: 38px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.card {
+  background-color: white;
+  border-radius: 5px;
+  float: left;
+  width: 99%;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 5px #d4d3d3;
+  position: relative;
+}
+.card .container {
+  margin: 15px;
+}
+.card h1 {
+  line-height: 60px;
+  color: #888888;
+  margin: 0 18px;
+}
+.card h3 {
+  color: #888888;
+  margin: 0 20px;
+  line-height: 60px;
+}
+.card a {
+  display: inline;
+}
+.card .title {
+  color: #a24f4f;
+  line-height: 30px;
+  margin: 0 28px;
+}
+.card .line {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eeeeee;
+}
+.card ul {
+  margin: 0 20px;
+}
+.card li {
+  float: left;
+  width: 50%;
+  line-height: 40px;
+  color: #888888;
+  font-size: 14px;
+  font-weight: bold;
+}
+.card ul:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.min {
+  width: 50%;
+  float: left;
+  height: 340px;
+  overflow: hidden;
+}
+.min .card {
+  width: 98%;
+}
+.edit h2,  .edit h3 {
+  display: inline;
+}
+.edit .red {
+  color: #a24f4f;
+}
+.edit .container {
+  margin: 1px 15px;
+}
+.text {
+  color: #888888;
+  height: 247px;
+  margin: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  overflow: auto;
+}
+.img-box {
+  height: 257px;
+  overflow: auto;
+}
+.img-box a {
+  float: left;
+  margin: 5px;
+  display: block;
+}
+.img-box a img {
+  width: 260px;
+  height: 146px;
+  display: block;
+}
+.input-bar {
+  padding-top: 5px;
+  position: relative;
+}
+.input-bar input, .input-bar select, .input-bar textarea {
+  background-color: #f4f4f4;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 5px 0;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  float: left;
+  display: block;
+  color: #333;
+}
+.input-bar textarea {
+  height: 242px;
+}
+.input-bar textarea.mini {
+  height: 99px;
+}
+.input-bar select {
+  color: #896469;
+}
+.long {
+  width: 75%;
+}
+.short {
+  width: 21%;
+}
+.medium {
+  width: 52%;
+}
+.separate {
+  font-size: 20px;
+  color: #561e31;
+  line-height: 30px;
+  height: 30px;
+  display: block;
+  float: left;
+  margin: 5px 0;
+  width: 2%;
+  text-align: center;
+  color: #6d3446;
+}
+.min .separate {
+  width: 4%;
+}
+.min input, .min textarea {
+  width: 96%;
+}
+.info {
+  color: #c5c5c5;
+  position: absolute;
+  width: 100px;
+  right: 10px;
+  bottom: 10px;
+  line-height: 20px;
+  text-align: right;
+  font-size: 12px;
+  overflow: hidden;
+}
+.new-image {
+  float: left;
+  margin: 5px;
+  display: block;
+  width: 190px;
+  height: 245px;
+  width: 46%;
+  position: relative;
+  background-image: url(../resource/add.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  overflow: hidden;
+}
+.new-image input {
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.new-image img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  pointer-events: none;
+  height: auto;
+}
+.bottom-bar .submit {
+  background-color: #b7241c;
+  color: white;
+  width: 180px;
+  line-height: 55px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 40px;
+  font-size: 20px;
+  box-shadow: 1px 1px 5px #888888;
+}
+.bottom-bar .backto {
+  background-color: white;
+  width: 180px;
+  line-height: 51px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #b7241c;
+  font-size: 20px;
+  border: 2px solid #b7241c;
+  box-sizing: border-box;
+}
+.radio-box, .red {
+  line-height: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.radio-box label {
+  cursor: pointer;
+}
+
+.card .delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 14px;
+  color: white;
+  display: none;
+}
+
+.card .delete:hover {
+  background-color: #b7241c;
+}
+
+.bottom-button-box {
+  margin: 10px 20px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  font-size: 16px;
+  color: #606060;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.bottom-button-box input[type=button] {
+  height: 40px;
+  padding: 0 10px;
+  margin-left: 10px;
+  color: white;
+  background-color: #ab2323;
+  width: 90px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.bottom-button-box input[type=text] {
+  height: 37px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 100px;
+}
+
+.bottom-button-box .fl {
+  float: left;
+}
+
+.gray {
+  background-color: #928e8d !important;
+}
+
+.gray:hover {
+  background-color: #73706f !important;
+}
+
+.bottom-button-box input[type=button]:hover {
+  background-color: #881313;
+}

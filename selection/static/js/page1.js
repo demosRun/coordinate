@@ -29,3 +29,44 @@ window.onorientationchange = function () {
 function inputEnd() {
   $(window).scrollTop(0)
 }
+
+function checkAll() {
+  var checkItemList = document.getElementsByClassName('check-item')
+  if (document.getElementById('checkAllBox').checked) {
+    for (var ind = 0; ind < checkItemList.length; ind++) {
+      checkItemList[ind].checked = true
+    }
+  } else {
+    for (var ind = 0; ind < checkItemList.length; ind++) {
+      checkItemList[ind].checked = false
+    }
+  }
+  
+}
+
+
+function changeTianBao () {
+  var tianbao = document.getElementsByClassName('tianbao-switch')[0]
+  var text = tianbao.getElementsByClassName('text')[0]
+  if (document.getElementById('tianbao').checked) {
+    
+    text.innerText = '填票打开'
+    text.style.left = '-10px'
+  } else {
+    text.style.left = '10px'
+    text.innerText = '填票关闭'
+  }
+}
+
+function changeTouPiao () {
+  var toupiao = document.getElementsByClassName('toupiao-switch')[0]
+  var text = toupiao.getElementsByClassName('text')[0]
+  if (document.getElementById('toupiao').checked) {
+    
+    text.innerText = '投票打开'
+    text.style.left = '-10px'
+  } else {
+    text.style.left = '10px'
+    text.innerText = '投票关闭'
+  }
+}
